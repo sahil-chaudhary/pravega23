@@ -1,15 +1,15 @@
 <script>
 import Title from './Title.vue'
-
+import Soon from './Soon.vue'
 export default{
-	components:{Title}
+	components:{Title, Soon}
 }
 </script>
 <template>
 	<div :class = "`title-flex`">
 		<Title text = "SPONSORS" color = "#dd6e42"/>
 		<div :class = "`content`">
-			stuff
+			<Soon />
 		</div>
 	</div>
 </template>
