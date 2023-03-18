@@ -12,8 +12,11 @@ export default{
 </script>
 
 <template>
+  
   <Navbar :choice = "0" @navUpdate = "(choice) => {appChoice=choice}"/>
+
   <router-view></router-view>
+
 </template>
 
 <style scoped>

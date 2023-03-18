@@ -2,7 +2,8 @@
 	export default {
     data(){
     	return{
-        choice: 0
+        choice: 0,
+        navOpen: false
       }
     },
     methods:{
@@ -23,10 +24,10 @@
   <nav :id="`navbar`">
     <div :class="`left-pravega`" @click="updateNav(0)">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
-      	<img src = "src/assets/x.png"/>
-
+      	<img src = "/src/assets/x.png"/>
       </router-link>
     </div>
+
     <div :class="`right-nav`">
 
       <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
@@ -71,8 +72,53 @@
     	<div  @click="updateNav(6)" :class="`cont-button`">
       		Contact
     	</div>
+      </router-link> 
+    </div>
+
+    <div class = "mobile-nav">
+      <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
+      <div @click="updateNav(1)" :class="`workshop-button`">
+          Carvaan
+      </div>
       </router-link>
 
+      <router-link :style = "`text-decoration: none; color: inherit; `" to="/scitech">
+      <div @click="updateNav(1)" :class="`scitech-button`">
+          SciTech
+      </div>
+      </router-link>
+
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/cultural">
+      <div  @click="updateNav(2)" :class="`cult-button`">
+          Culturals
+      </div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/workshop">
+      <div  @click="updateNav(3)" :class="`workshop-button`">
+          Workshop
+      </div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/merch">
+      <div  @click="updateNav(4)" :class="`merch-button`">
+          Merchandise
+      </div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/sponsors">
+      <div  @click="updateNav(5)" :class="`spon-button`">
+          
+          Sponsors
+      </div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/contact">
+      <div  @click="updateNav(6)" :class="`cont-button`">
+          Contact
+      </div>
+      </router-link> 
     </div>
   </nav>
 </template>
@@ -158,4 +204,15 @@
   .cont-button:hover{
     color: #3fd8a4;
   }  
+  .mobile-nav{
+    display: none;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 768px){
+    .mobile-nav{
+      display: block;
+      max-height: 5vh;
+    }
+  }
 </style>
