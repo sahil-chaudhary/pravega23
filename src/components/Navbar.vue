@@ -23,40 +23,56 @@
   <nav :id="`navbar`">
     <div :class="`left-pravega`" @click="updateNav(0)">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
-      	Pravega
+      	<img src = "src/assets/x.png"/>
+
       </router-link>
     </div>
     <div :class="`right-nav`">
+
+      <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
+      <div @click="updateNav(1)" :class="`workshop-button`">
+          Carvaan
+      </div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit; `" to="/scitech">
     	<div @click="updateNav(1)" :class="`scitech-button`">
-      		<router-link :style = "`text-decoration: none; color: inherit; `" to="/scitech">
       		SciTech
-      		</router-link>
     	</div>
-    	<div  @click="updateNav(2)" :class="`cult-button`">
-    		<router-link :style = "`text-decoration: none; color: inherit`" to="/cultural">
+    	</router-link>
+
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/cultural">
+      <div  @click="updateNav(2)" :class="`cult-button`">
       		Culturals
-      		</router-link>
     	</div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/workshop">
     	<div  @click="updateNav(3)" :class="`workshop-button`">
-      		<router-link :style = "`text-decoration: none; color: inherit`" to="/workshop">
       		Workshop
-      		</router-link>
     	</div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/merch">
     	<div  @click="updateNav(4)" :class="`merch-button`">
-      		<router-link :style = "`text-decoration: none; color: inherit`" to="/merch">
       		Merchandise
-      		</router-link>
     	</div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/sponsors">
     	<div  @click="updateNav(5)" :class="`spon-button`">
-      		<router-link :style = "`text-decoration: none; color: inherit`" to="/sponsors">
+      		
       		Sponsors
-      		</router-link>
     	</div>
+      </router-link>
+
+      <router-link :style = "`text-decoration: none; color: inherit`" to="/contact">
     	<div  @click="updateNav(6)" :class="`cont-button`">
-    		<router-link :style = "`text-decoration: none; color: inherit`" to="/contact">
       		Contact
-      		</router-link>
     	</div>
+      </router-link>
+
     </div>
   </nav>
 </template>
@@ -76,9 +92,13 @@
     color: #eeeeee;
     padding-left: 5vw;
     z-index: 2;
+
   }
   .left-pravega{
   	cursor: pointer;
+  }
+  .left-pravega img{
+    width: 50px;
   }
   .right-nav{
   	font-size: 1.5em;
@@ -97,7 +117,7 @@
     border-radius: 18px;
   }
   .right-nav div:hover{
-
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);;
     background-position: 50% 60%;
   }
 

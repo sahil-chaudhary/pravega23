@@ -1,20 +1,38 @@
+
+
 <script>
+import Timer from './Timer.vue'
+export default{
+  components:{Timer}
+}
 </script>
 
 <template>
   <div :id = "`home`">
-    <img :src="`src/assets/3.svg`" :class="'p3'"/>
+    <div class = "flex-cont">
+      <div class = "left">
+        <img :src="`src/assets/pravega.png`" :class="'pravega'"/>
+        <div class = "timer">
+          <Timer />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<style>
+<style scoped>
   #home{
     height: 90vh;
     width: 100vw;
     background-color: #3a0ca3;
   }
-  .p3{
-    position: absolute;
-    right: 10px;
+
+  .left-abs{
+
+  }
+  .pravega{
+    
+    
+    width: 600px;
   }
 </style>

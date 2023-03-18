@@ -10,8 +10,7 @@ export default{
 		<Title text = "SCITECH" color = "#f72585"/>
 		<div :class = "`content`">
 			<div :class = "'links'">
-				<Card link = "src/assets/Decoherence.jpg" 
-				size = "300px"/>
+				<Card link = "src/assets/Decoherence.jpg" size = "300px"/>
 				<Card link = "src/assets/BioBlitz.jpg" size = "300px"/>
 				<Card link = "src/assets/Chemenigma.jpg" size = "300px"/>
 				<Card link = "src/assets/Enumeration.jpg" size = "300px"/>
@@ -24,11 +23,10 @@ export default{
 	</div>
 </template>
 
-<style>
-
+<style scoped>
 .title-flex{
 	display: flex;
-	height: 200vh;
+	height: 90vh;
 }
 .content{
 	background-color: #eeeeee;

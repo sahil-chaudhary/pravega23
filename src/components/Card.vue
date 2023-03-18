@@ -70,7 +70,7 @@ export default{
 	</div>
 </template>
 
-<style>
+<style scoped>
 
 .card{
 	--c-size: v-bind('size');
