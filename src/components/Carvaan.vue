@@ -42,11 +42,11 @@ export default{
 				title = "Bhubaneshwar"
 				hover = "24-25 June" />
 
-				<Card2 
+				<a :href="`/carvaan/hyderabad`"><Card2 
 				dataImage="/src/assets/hyderabad.jpg"
 				size = "300px"
 				title = "Hyderabad"
-				hover = "8-9 July" />
+				hover = "8-9 July" /></a>
 
 				<Card2 
 				dataImage="/src/assets/kochi.jpg"
