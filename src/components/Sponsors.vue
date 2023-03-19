@@ -13,9 +13,7 @@ export default{
 		</div>
 	</div>
 </template>
-
 <style>
-
 .title-flex{
 	display: flex;
 	height: 90vh;
