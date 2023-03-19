@@ -12,8 +12,6 @@ export default{
 			<Soon />
 		</div>
 	</div>
-
-</div>
 </template>
 
 <style>
