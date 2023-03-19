@@ -1,5 +1,5 @@
 <script>
-export defaultn{
+export default{
 	props:{
 		link: String,
 		color: String,
