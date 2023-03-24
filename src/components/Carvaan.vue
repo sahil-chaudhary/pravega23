@@ -16,7 +16,8 @@ export default{
 				dataImage="/src/assets/mumbai.jpg"
 				size = "300px"
 				title = "Mumbai"
-				hover = "20-21 May" />
+				hover = "20-21 May"
+				v-bind:href="`/carvaan/mumbai`" />
 
 				<Card2 
 				dataImage="/src/assets/ahmedabad.jpg"
@@ -24,11 +25,11 @@ export default{
 				title = "Ahmedabad"
 				hover = "27-28 May" />
 
-				<Card2 
+				<a :href="`/carvaan/delhi`"><Card2 
 				dataImage="/src/assets/delhi.jpg"
 				size = "300px"
 				title = "Delhi"
-				hover = "10-11 June" />
+				hover = "10-11 June"/></a>
 
 				<Card2 
 				dataImage="/src/assets/kolkata.jpg"
@@ -42,11 +43,11 @@ export default{
 				title = "Bhubaneshwar"
 				hover = "24-25 June" />
 
-				<Card2 
+				<a :href="`/carvaan/hyderabad`"><Card2 
 				dataImage="/src/assets/hyderabad.jpg"
 				size = "300px"
 				title = "Hyderabad"
-				hover = "8-9 July" />
+				hover = "8-9 July" /></a>
 
 				<Card2 
 				dataImage="/src/assets/kochi.jpg"

@@ -36,7 +36,7 @@
   <nav :id="`navbar`">
     <div :class="`left-pravega`" @click="updateNav(0)">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
-      	<img src = "/src/assets/x.png"/>
+      	<img src = "/src/assets/Asset 4.png" style="height: 50px; width: auto;"/>
       </router-link>
     </div>
 
