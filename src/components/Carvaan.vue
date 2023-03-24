@@ -12,6 +12,7 @@ export default{
 
 			<div class = "links">
 				<Card2 
+				href = "https://google.com"
 				dataImage="/src/assets/mumbai.jpg"
 				size = "300px"
 				title = "Mumbai"
@@ -70,7 +71,7 @@ export default{
 	</div>
 </template>
 
-<style>
+<style scoped>
 	
 .title-flex{
 	display: flex;
@@ -78,7 +79,6 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
-	width: 75vw;
 	height: auto;
 	border-top-left-radius: 25px;
 	overflow-y: scroll;

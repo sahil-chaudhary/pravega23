@@ -8,6 +8,7 @@ import Workshop from "../components/Workshop.vue"
 import Merchandise from "../components/Merchandise.vue"
 import Sponsors from "../components/Sponsors.vue"
 import Contact from "../components/Contact.vue"
+
 const routes = [
 	{path: "/", name: "Home", component: Home},
 	{path: "/carvaan", name: "Carvaan", component: Carvaan},

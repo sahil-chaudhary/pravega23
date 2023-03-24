@@ -12,11 +12,9 @@ export default{
 			<Soon />
 		</div>
 	</div>
-
-</div>
 </template>
 
-<style>
+<style scoped>
 
 .title-flex{
 	display: flex;
@@ -24,6 +22,5 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
-	width: 75vw;
 }
 </style>

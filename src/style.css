@@ -13,3 +13,16 @@ html{
 body{
     height: auto;
 }
+
+.content{
+    width: 75vw;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        width: 100vw;
+    }
+    .title{
+       display: none; 
+    }
+}

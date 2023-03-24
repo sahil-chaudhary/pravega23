@@ -7,7 +7,9 @@ export default{
 </script>
 <template>
 	<div :class = "`title-flex`">
+		<div class = "mobile-handler">
 		<Title text = "SCITECH" color = "#f72585"/>
+		</div>
 		<div :class = "`content`">
 			<div :class = "'links'">
 				<Card link = "/src/assets/Decoherence.jpg" size = "300px"/>
@@ -30,7 +32,6 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
-	width: 75vw;
 	height: auto;
 	border-top-left-radius: 25px;
 	overflow-y: scroll;
@@ -43,5 +44,11 @@ export default{
 	padding-top: 8px;
 }
 .links > div{
+}
+
+@media screen and (max-width: 768px){
+
+	
+
 }
 </style>

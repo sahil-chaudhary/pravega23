@@ -14,5 +14,12 @@ export default{
 	</div>
 </template>
 
-<style>
+<style scoped>
+	.title-flex{
+	display: flex;
+	height: 90vh;
+}
+.content{
+	background-color: #eeeeee;
+}
 </style>

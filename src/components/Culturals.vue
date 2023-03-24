@@ -11,6 +11,7 @@ export default{
 
 	<div :class = "`title-flex`">
 		<Title text = "CULTURALS" color = "#fff12d"/>
+		
 		<div :class = "`content`">
 			<Soon/>
 		</div>
@@ -28,8 +29,6 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
-	width: 75vw;
-	z-index: 4;
 }
 
 

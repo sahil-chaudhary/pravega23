@@ -6,7 +6,8 @@ export default{
 		size: String,
 		dataImage: String,
 		title: String,
-		hover: String
+		hover: String,
+		href: ''
 	},
 	mounted(){
 		this.width = parseInt(this.size, 10);
@@ -80,6 +81,7 @@ export default{
 	@mousemove="handleMouseMove"
 	@mouseenter="handleMouseEnter"
 	@mouseleave="handleMouseLeave"
+	@click="window.open(this.href)"
 	ref="card">
 		<div 
 		:class="`card`"
@@ -98,7 +100,7 @@ export default{
 	</div>
 </template>
 
-<style>
+<style scoped>
 
 .card-wrap{
 	margin: 10px;
