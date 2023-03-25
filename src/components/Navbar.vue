@@ -7,8 +7,10 @@
       }
     },
     methods:{
-      updateNav(choice){
-        this.choice = choice
+      closeDropdown(){
+        this.navOpen = false;
+
+        console.log("navOpen value: " + this.navOpen)
       }
     },
     emits: ['navUpdate'],
@@ -36,52 +38,52 @@
   <nav :id="`navbar`">
     <div :class="`left-pravega`" @click="updateNav(0)">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
-      	<img src = "/src/assets/Asset 4.png" style="height: 50px; width: auto;"/>
+      	<img src = "/img/logo/pravegax.png" style="height: 50px; width: auto;"/>
       </router-link>
     </div>
 
     <div :class="`right-nav`">
 
       <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
-      <div @click="updateNav(1)" :class="`workshop-button`">
+      <div :class="`workshop-button`">
           Carvaan
       </div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit; `" to="/scitech">
-    	<div @click="updateNav(1)" :class="`scitech-button`">
+    	<div  :class="`scitech-button`">
       		SciTech
     	</div>
     	</router-link>
 
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/cultural">
-      <div  @click="updateNav(2)" :class="`cult-button`">
+      <div  :class="`cult-button`">
       		Culturals
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/workshop">
-    	<div  @click="updateNav(3)" :class="`workshop-button`">
+    	<div :class="`workshop-button`">
       		Workshop
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/merch">
-    	<div  @click="updateNav(4)" :class="`merch-button`">
+    	<div :class="`merch-button`">
       		Merchandise
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/sponsors">
-    	<div  @click="updateNav(5)" :class="`spon-button`">
+    	<div  :class="`spon-button`">
       		
       		Sponsors
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/contact">
-    	<div  @click="updateNav(6)" :class="`cont-button`">
+    	<div  :class="`cont-button`">
       		Contact
     	</div>
       </router-link> 
@@ -92,7 +94,7 @@
   <nav :id="`mobile-nav`">
     <div :class="`left-pravega`" @click="updateNav(0)">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
-        <img src = "/src/assets/x.png"/>
+        <img src = "/img/logo/x.png"/>
       </router-link>
     </div>
 
@@ -103,17 +105,47 @@
     </button>
 
     <div class="dropdown" ref = "dropdown">
-      <div>
-        Text 1
-      </div>
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/carvaan">
+        <div>
+          Carvaan
+        </div>
+      </router-link>
 
-      <div>
-        Text 2
-      </div>
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/scitech">
+        <div>
+          SciTech
+        </div>
+      </router-link>
 
-      <div>
-        Text 3
-      </div>
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/cultural">
+        <div>
+          Culturals
+        </div>
+      </router-link>
+
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/workshop">
+        <div>
+          Workshop
+        </div>
+      </router-link>
+
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/merch">
+        <div> 
+          Merchandise
+        </div>
+      </router-link>
+
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/sponsors">
+        <div>
+          Sponsors
+        </div>
+      </router-link>
+
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/contact">
+        <div>
+          Contact
+        </div>
+      </router-link>
     </div>
   
   </nav>
@@ -231,36 +263,44 @@
       transform: translateY(-8px);
     }
     .bottom {
-   transform: translateY(8px);
-  }
-  .burger.active .top {
-   transform: rotate(-45deg);
-  }
-  .burger.active .mid {
-   transform: translateX(-20px) rotate(360deg);
-   opacity: 0;
-  }
-  .burger.active .bottom {
-   transform: rotate(45deg);
-  }
+     transform: translateY(8px);
+    }
+    .burger.active .top {
+     transform: rotate(-45deg);
+    }
+    .burger.active .mid {
+     transform: translateX(-20px) rotate(360deg);
+     opacity: 0;
+    }
+    .burger.active .bottom {
+     transform: rotate(45deg);
+    }
 
   .dropdown{
     position: absolute;
-    max-height: 30vh;
+    max-height: 0vh;
     overflow: hidden;
-    transition: max-height 0.7s linear;
-
+    transition: max-height 0.6s ease;
+    width: 100vw;
     background-color: #3a0ca3;
     top: 10vh;
     left: 0vw;
+
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: linear-gradient(to bottom, #3a0ca3, #21075c);
   }
 
   .dropdown div{
-    width: 100vw;
+    display: block;
+    position: relative;
+    width: max-content;
     left: 50vw;
     transform: translateX(-50%);
     font-size: 50px;
+    cursor: pointer;
   }
+
   @media screen and (max-width: 768px){
     #navbar{
       display: none;

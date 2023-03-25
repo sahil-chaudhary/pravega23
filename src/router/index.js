@@ -8,15 +8,15 @@ import Workshop from "../components/Workshop.vue"
 import Merchandise from "../components/Merchandise.vue"
 import Sponsors from "../components/Sponsors.vue"
 import Contact from "../components/Contact.vue"
-import delhi_forms from "../components/cities/delhi.vue"
-import mumbai_forms from "../components/cities/mumbai.vue"
-import aheme_forms from "../components/cities/ahme.vue"
-import kochi_forms from "../components/cities/kochi.vue"
-import bhub_forms from "../components/cities/bhub.vue"
-import bang_forms from "../components/cities/bangalore.vue"
-import chennai_forms from "../components/cities/chennai.vue"
-import hyder_forms from "../components/cities/hyder.vue"
-import kolkata_forms from "../components/cities/kolkata.vue"
+import Delhi from "../components/carvaan/Delhi.vue"
+import Mumbai from "../components/carvaan/Mumbai.vue"
+import Ahmedabad from "../components/carvaan/Ahmedabad.vue"
+import Kochi from "../components/carvaan/Kochi.vue"
+import Bhubaneswar from "../components/carvaan/Bhubaneswar.vue"
+import Bengaluru from "../components/carvaan/Bengaluru.vue"
+import Chennai from "../components/carvaan/Chennai.vue"
+import Hyderabad from "../components/carvaan/Hyderabad.vue"
+import Kolkata from "../components/carvaan/Kolkata.vue"
 
 const routes = [
 	{path: "/", name: "Home", component: Home},
@@ -27,15 +27,15 @@ const routes = [
 	{path: "/merch", name:"Merchandise", component: Merchandise},
 	{path: "/sponsors", name:"Sponsors", component: Sponsors},
 	{path: "/contact", name: "Contact", component: Contact},
-	{path:"/carvaan/delhi",name:"forms-Delhi",component:delhi_forms},
-	{path:"/carvaan/mumbai",name:"forms-mumbai",component:mumbai_forms},
-	{path:"/carvaan/ahemedabad",name:"forms-ahme",component:aheme_forms},
-	{path:"/carvaan/kochi",name:"forms-kochi",component:kochi_forms},
-	{path:"/carvaan/bhubaneshwar",name:"forms-bhub",component:bhub_forms},
-	{path:"/carvaan/bangalore",name:"forms-bang",component:bang_forms},
-	{path:"/carvaan/chennai",name:"forms-chennai",component:chennai_forms},
-	{path:"/carvaan/hyderabad",name:"forms-hyder",component:hyder_forms},
-	{path:"/carvaan/kolkata",name:"forms-kolk",component:kolkata_forms}
+	{path:"/carvaan/delhi",name:"Delhi",component:Delhi},
+	{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},
+	{path:"/carvaan/ahmedabad",name:"Ahmedabad",component:Ahmedabad},
+	{path:"/carvaan/kochi",name:"Kochi",component:Kochi},
+	{path:"/carvaan/bhubaneswar",name:"Bhubaneswar",component:Bhubaneswar},
+	{path:"/carvaan/bengaluru",name:"Bengaluru",component:Bengaluru},
+	{path:"/carvaan/chennai",name:"Chennai",component:Chennai},
+	{path:"/carvaan/hyderabad",name:"Hyderabad",component:Hyderabad},
+	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata}
 ]
 
 const router = createRouter({

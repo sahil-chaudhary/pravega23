@@ -58,7 +58,7 @@ export default{
 			this.mouseX = e.pageX - coords.left - this.width/2;
 			this.mouseY = e.pageY - coords.top - this.height/2;
 			//console.log("mouseXY: " + this.mouseX + " " + this.mouseY);
-			console.log("pageXY: " + e.pageX + " " + e.pageY + " clientXY: " + coords.left + " " + coords.top);
+			//console.log("pageXY: " + e.pageX + " " + e.pageY + " clientXY: " + coords.left + " " + coords.top);
 			//console.log("width height: " + this.width + " " + this.height)
 			//console.log("client: " + this.$refs.card.clientWidth + " " + this.$refs.card.clientHeight)
 

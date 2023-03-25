@@ -12,14 +12,14 @@ export default{
 		</div>
 		<div :class = "`content`">
 			<div :class = "'links'">
-				<Card link = "/src/assets/Decoherence.jpg" size = "300px"/>
-				<Card link = "/src/assets/BioBlitz.jpg" size = "300px"/>
-				<Card link = "/src/assets/Chemenigma.jpg" size = "300px"/>
-				<Card link = "/src/assets/Enumeration.jpg" size = "300px"/>
-				<Card link = "/src/assets/Quadsparks.jpg" size = "300px"/>
-				<Card link = "/src/assets/BAH.jpg" size = "300px"/>
-				<Card link = "/src/assets/PIS.jpg" size = "300px"/>
-				<Card link = "/src/assets/Exhibitions.jpg" size = "300px"/>
+				<Card link = "/img/scitech/Decoherence.jpg" size = "300px"/>
+				<Card link = "/img/scitech/BioBlitz.jpg" size = "300px"/>
+				<Card link = "/img/scitech/Chemenigma.jpg" size = "300px"/>
+				<Card link = "/img/scitech/Enumeration.jpg" size = "300px"/>
+				<Card link = "/img/scitech/Quadsparks.jpg" size = "300px"/>
+				<Card link = "/img/scitech/BAH.jpg" size = "300px"/>
+				<Card link = "/img/scitech/PIS.jpg" size = "300px"/>
+				<Card link = "/img/scitech/Exhibitions.jpg" size = "300px"/>
 			</div>
 		</div>
 	</div>

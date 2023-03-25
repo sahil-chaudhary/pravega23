@@ -11,7 +11,7 @@ export default{
   <div :id = "`home`">
     <div class = "flex-cont">
       <div class = "left">
-        <img src="/src/assets/pravega.png" :class="'pravega'"/>
+        <img src="/img/logo/pravega.png" :class="'pravega'"/>
         <div class = "timer">
           <Timer />
         </div>
