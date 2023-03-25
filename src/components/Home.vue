@@ -9,14 +9,14 @@ export default{
 
 <template>
   <div :id = "`home`">
-    <div class = "flex-cont">
-      <div class = "left">
-        <img src="/img/logo/pravega.png" :class="'pravega'"/>
+        <div class = "logo">
+          <img src="/img/logo/pravega.png" class = "pravega"/>
+          <img src="/img/logo/x.png" class = "X" />
+        </div>        
+
         <div class = "timer">
           <Timer />
         </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -27,12 +27,52 @@ export default{
     background-color: #3a0ca3;
   }
 
-  .left-abs{
+  .logo{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    height: 100px;
+    width: auto;
+  }
+  .logo img{
+    height: 100px;
+    width: auto;
+  }
 
+  .timer{
+    padding-left: 20px;
   }
   .pravega{
-    
-    
-    width: 600px;
+    position: relative;
+    animation: appearPravega 0.8s ease-out;
+  }
+  .X{
+    position: relatives;
+    animation: appearX 2s ease-out;
+  }
+ @keyframes appearPravega{
+    0%{
+      opacity: 0%;
+      right: 30px;
+    }
+    100%{
+      opacity: 100%;
+      right: 0px;
+    }
+  }
+
+  @keyframes appearX{
+    0%{
+      opacity: 0%;
+      right: 30px;
+    }
+    50%{
+      opacity: 0%;
+
+    }
+    100%{
+      opacity: 1;
+      right: 0px;
+    }
   }
 </style>
