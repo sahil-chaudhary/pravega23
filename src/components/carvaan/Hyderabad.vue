@@ -2,32 +2,95 @@
 import Title from '../Title.vue'
 import Soon from '../Soon.vue'
 export default{
-	components:{Title, Soon}
+    components:{Title, Soon},
+    methods:{
+        toggle(){
+            var x = document.getElementById("selection").value;
+            if (x=='bob'){
+                document.getElementById("bob").style.display = "block";
+                document.getElementById("eleg").style.display = "none";
+                document.getElementById("Cres").style.display = "none";
+                document.getElementById("pr_and_foot").style.display = "none";
+                document.getElementById("lasya").style.display = "none";
+            }
+            else if (x=='eleg'){
+                document.getElementById("eleg").style.display = "block";
+                document.getElementById("Cres").style.display = "none";
+                document.getElementById("pr_and_foot").style.display = "none";
+                document.getElementById("lasya").style.display = "none";
+                document.getElementById("bob").style.display = "none";
+            }
+            else if (x=='Cres'){
+                document.getElementById("Cres").style.display = "block";
+                document.getElementById("pr_and_foot").style.display = "none";
+                document.getElementById("lasya").style.display = "none";
+                document.getElementById("bob").style.display = "none";
+                document.getElementById("eleg").style.display = "none";
+            }
+            
+            else if (x=='pr_and_foot'){
+                document.getElementById("pr_and_foot").style.display = "block";
+                document.getElementById("lasya").style.display = "none";
+                document.getElementById("bob").style.display = "none";
+                document.getElementById("eleg").style.display = "none";
+                document.getElementById("Cres").style.display = "none";
+            }
+            else if (x=='lasya'){
+                document.getElementById("lasya").style.display = "block";
+                document.getElementById("bob").style.display = "none";
+                document.getElementById("eleg").style.display = "none";
+                document.getElementById("Cres").style.display = "none";
+                document.getElementById("pr_and_foot").style.display = "none";
+
+            }
+     
+
+    }
+
+    
+    }
 }
+
+
+
 </script>
 
 <template>
 <div :class = "`title-flex`">
-		<Title text = "DELHI" color = "#dd6e42"/>
-		<div :class = "`content`">
-			<p :class="`battleofbands`">
+        <Title text = "DELHI" color = "#dd6e42"/>
+        <div :class = "`content`">
+            <p :class="`battleofbands`">
                 <u>Battle Of Bands</u>
             </p>
-			<p :style="`font-size:large`">Lorem ipsum dodet</p>
+            <p :style="`font-size:large`">Lorem ipsum dodet</p>
             <h2 style="color:black; margin: 0 10px; text-align: center;">Registration</h2>
             <div :class="`mainn`">
-				<form action="/" class="testbox">
+                <form action="/" class="testbox">
+
                     <div class = "item">
                         
+                            <label class="label" for="selection">Please select the competition:</label><br>
+                            <select id="selection" required >
+                             
+                                    <option value="bob">Battle of Bands</option>
+                                    <option value="eleg">Elegante</option>
+                                    <option value="Cres">Crescendo</option>
+                                    <option value="pr_and_foot">Proscenium and Footprints</option>
+                                    <option value="lasya">Lasya</option>
+                            </select>
+                            <button type="button" @click="toggle">Submit</button>
+                    </div>        
+                   <div id = "bob">
+                        
                             <label class="label" for="name">Name:</label><br>
-						<div class = "name-item">
+                        <div class = "name-item">
                             <input type="text" name="name" placeholder="Enter your name" required />
                         </div>
                     </div>
-                    <div class = "item">
+                    <div id = "pr_and_foot">
                         
                             <label class="label" for="edu_level">Education Level</label><br>
-						<div class = "name-item">
+                        <div class = "name-item">
                             <input type="text" name="edu_level" list="edu_name" placeholder="Type your education level if not present" required>
                                 <datalist id="edu_name">
                                     <option value="High School (Class 11 and 12)"></option>
@@ -35,40 +98,54 @@ export default{
                                  </datalist>
                         </div>
                     </div>             
-                    <div class = "item">
+                    <div id = "eleg">
                        
                             <label class="label" for="email">Email</label><br>
-						<div class = "name-item">	
+                        <div class = "name-item">   
                             <input type="email" name="email" placeholder="Enter your email" required />
                         </div>
                     </div>    
-                    <div class = "item">
+                    <div id = "Cres">
                         
                             <label class="label" for="remarks">Remarks</label><br>
-						<div class = "name-item">
+                        <div class = "name-item">
                             <textarea name="remarks" placeholder="Enter your remarks"></textarea>
                         </div>
-                    </div>    
+                    </div> 
+                    <div id = "lasya">
+                        
+                            <label class="label" for="remarks">Remarks</label><br>
+                        <div class = "name-item">
+                            <textarea name="remarks" placeholder="Enter your remarks"></textarea>
+                        </div>
+                    </div>
+                     
                    
                     <div class="btn-block">
                         <button type="submit" href="/">Send</button>
                     </div>
                 </form>
             </div>
-		</div>
-	</div>
+        </div>
+    </div>
 </template>
 
 <style scoped>
 .title-flex{
-	display: flex;
-	height: 90vh;
+    display: flex;
+    height: 90vh;
 }
+
+
 .content{
-	background-color: #eeeeee;
-	width: 75vw;
-	justify-content: center;
-	align-items: center;
+    background-color: #eeeeee;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#bob, #eleg, #Cres, #pr_and_foot, #lasya{
+    display: none;
 }
 
 .battleofbands{
@@ -78,15 +155,15 @@ export default{
 }
 
 .text{
-	font-size: large;
-	text-align: left;
+    font-size: large;
+    text-align: left;
 }
 
 .label{
-	color:black;
-	font-size: large;
-	text-align: left;
-	margin: 0 10px;
+    color:black;
+    font-size: large;
+    text-align: left;
+    margin: 0 10px;
 }
 
 .title-flex {
@@ -235,7 +312,7 @@ button:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-		margin-left: 10px;
+        margin-left: 10px;
     }
 
     .name-item input,

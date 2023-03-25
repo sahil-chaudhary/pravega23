@@ -18,6 +18,7 @@ import Chennai from "../components/carvaan/Chennai.vue"
 import Hyderabad from "../components/carvaan/Hyderabad.vue"
 import Kolkata from "../components/carvaan/Kolkata.vue"
 
+
 const routes = [
 	{path: "/", name: "Home", component: Home},
 	{path: "/carvaan", name: "Carvaan", component: Carvaan},

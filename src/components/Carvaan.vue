@@ -9,6 +9,23 @@ export default{
 	<div :class = "`title-flex`">
 		<Title text = "CARVAAN" color = "#4cc9f0"/>
 		<div :class = "`content`">
+			<div :class = "`description`">
+				CARVAAN is Pravega’s ambitious new project, where we go to some of India’s biggest cities 
+				and host offline prelims for our esteemed cultural events. With CARVAAN, our goal is to conquer 
+				new horizons and provide more students the opportunity to express themselves via Pravega.
+                <br><br>
+
+				Our four main events under CARVAAN are:
+				<ul>
+					<li>Proscenium and Footprints: The stage and street play event of Pravega</li>
+					<li>Battle of Bands: No introduction needed of course! </li>
+					<li>Lasya: The dance event of pravega</li>
+					<li>Elegante: The fashion event of pravega</li>
+					<li>Crescendo: The music event for pravega</li>
+				</ul>	
+				<br>
+			To learn in detail about all the events, click <a :href="`src/assets/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
+			</div>
 
 			<div class = "links">
 
@@ -87,11 +104,19 @@ export default{
 					hover = "19-20 August" />
 				</router-link>
 			</div>
+
+			
 		</div>
 	</div>
 </template>
 
 <style scoped>
+.description{
+	padding: 16px;
+	color: black;
+	font-size: large;
+	font-family: 'Roboto', sans-serif;
+}
 	
 .title-flex{
 	display: flex;
