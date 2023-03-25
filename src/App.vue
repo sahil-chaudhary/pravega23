@@ -2,18 +2,13 @@
 import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 export default{
-  components: {Navbar, Home},
-  data(){
-    return{
-      appChoice: 0
-    }
-  }
+  components: {Navbar, Home}
 }
 </script>
 
 <template>
   
-  <Navbar :choice = "0" @navUpdate = "(choice) => {appChoice=choice}"/>
+  <Navbar />
 
   <router-view></router-view>
 

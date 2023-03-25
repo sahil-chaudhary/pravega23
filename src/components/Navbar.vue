@@ -2,7 +2,6 @@
 	export default {
     data(){
     	return{
-        choice: 0,
         navOpen: false
       }
     },
@@ -13,11 +12,7 @@
         console.log("navOpen value: " + this.navOpen)
       }
     },
-    emits: ['navUpdate'],
     watch: {
-			choice(newChoice){
-        this.$emit('navUpdate',newChoice)
-      },
       navOpen(newNavOpen){
         console.log("works")
         if(newNavOpen){
@@ -36,7 +31,7 @@
 
 <template>
   <nav :id="`navbar`">
-    <div :class="`left-pravega`" @click="updateNav(0)">
+    <div :class="`left-pravega`">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
       	<img src = "/img/logo/pravegax.png" />
       </router-link>
@@ -172,15 +167,17 @@
   	cursor: pointer;
   }
   .left-pravega img{
-    width: 10vw
+    width: 200px;
   }
   .right-nav{
   	font-size: 1.5em;
     display:flex;
-    gap: 1vw
+    gap: 1vw;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .right-nav div{
-    padding: 8px;
+    padding: 1vw;
     cursor:pointer;
     transition: color 600ms, background-color 600ms, background-position 500ms;
 
@@ -299,7 +296,10 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1024px){
+    .left-pravega img{
+      width: 70px;
+    }
     #navbar{
       display: none;
     }

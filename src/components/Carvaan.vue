@@ -126,6 +126,8 @@ export default{
 	background-color: #eeeeee;
 	height: auto;
 	border-top-left-radius: 25px;
+
+	border-top-right-radius: 25px;
 	overflow-y: scroll;
 	color: #eeeeee;
 }
