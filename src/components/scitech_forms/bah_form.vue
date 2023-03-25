@@ -14,21 +14,38 @@ export default {
                 <u>Bad AdHoc Hypothesis</u>
             </p>    
             <p :style="`font-size:large`">Lorem ipsum dodet</p>
-            <h2 style="color:black;margin: 0 10px;">Registration</h2>
+            <h2 style="color:black;margin: 0 10px;">Registration</h2>np
             <div :class="`mainn`">
                 <form action="/" class="testbox">
-                    <label class="label" for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter your name" required />
-                    <label class="label" for="edu_level">Education Level</label>
-                    <input type="text" name="edu_level" list="edu_name" placeholder="Type your education level if not present" required>
-                        <datalist id="edu_name">
-                            <option value="High School (Class 11 and 12)"></option>
-                            <option value="Undergraduate"></option>
-                        </datalist>
-                    <label class="label" for="email">Email</label>
-                    <input type="email" name="email" placeholder="Enter your email" required />
-                    <label class="label" for="remarks">Remarks</label>
-                    <textarea name="remarks" placeholder="Enter your remarks"></textarea>
+                    <div class = "item">
+                        <div class = "name-item">
+                            <label class="label" for="name">Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required />
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "name-item">
+                            <label class="label" for="edu_level">Education Level</label>
+                            <input type="text" name="edu_level" list="edu_name" placeholder="Type your education level if not present" required>
+                                <datalist id="edu_name">
+                                    <option value="High School (Class 11 and 12)"></option>
+                                     <option value="Undergraduate"></option>
+                                 </datalist>
+                        </div>
+                    </div>             
+                    <div class = "item">
+                        <div class = "name-item">
+                            <label class="label" for="email">Email</label>
+                            <input type="email" name="email" placeholder="Enter your email" required />
+                        </div>
+                    </div>    
+                    <div class = "item">
+                        <div class = "name-item">
+                            <label class="label" for="remarks">Remarks</label>
+                            <textarea name="remarks" placeholder="Enter your remarks"></textarea>
+                        </div>
+                    </div>    
+                   
                     <div class="btn-block">
                         <button type="submit" href="/">Send</button>
                     </div>
