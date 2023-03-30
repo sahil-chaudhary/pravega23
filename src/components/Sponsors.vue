@@ -55,7 +55,6 @@ export default{
   	background: -webkit-linear-gradient(45deg, #dd6e42, #3a0ca6);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-
 }
 
 .links{

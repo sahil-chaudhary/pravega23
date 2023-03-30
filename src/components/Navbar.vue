@@ -33,7 +33,7 @@
   <nav :id="`navbar`">
     <div :class="`left-pravega`">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
-      	<img src = "/img/logo/pravegax.png" />
+      	<img src = "/img/logo/x.png" />
       </router-link>
     </div>
 
@@ -41,45 +41,45 @@
 
       <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
       <div :class="`workshop-button`">
-          Carvaan
+          CARVAAN
       </div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit; `" to="/scitech">
     	<div  :class="`scitech-button`">
-      		SciTech
+      		SCITECH
     	</div>
     	</router-link>
 
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/cultural">
       <div  :class="`cult-button`">
-      		Culturals
+      		CULTURALS
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/workshop">
     	<div :class="`workshop-button`">
-      		Workshop
+      		WORKSHOP
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/merch">
     	<div :class="`merch-button`">
-      		Merchandise
+      		MERCHANDISE
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/sponsors">
     	<div  :class="`spon-button`">
       		
-      		Sponsors
+      		SPONSORS
     	</div>
       </router-link>
 
       <router-link :style = "`text-decoration: none; color: inherit`" to="/contact">
     	<div  :class="`cont-button`">
-      		Contact
+      		CONTACT
     	</div>
       </router-link> 
     </div>
@@ -102,43 +102,43 @@
     <div class="dropdown" ref = "dropdown">
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/carvaan">
         <div>
-          Carvaan
+          CARVAAN
         </div>
       </router-link>
 
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/scitech">
         <div>
-          SciTech
+          SCITECH
         </div>
       </router-link>
 
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/cultural">
         <div>
-          Culturals
+          CULTURALS
         </div>
       </router-link>
 
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/workshop">
         <div>
-          Workshop
+          WORKSHOP
         </div>
       </router-link>
 
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/merch">
         <div> 
-          Merchandise
+          MERCHANDISE
         </div>
       </router-link>
 
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/sponsors">
         <div>
-          Sponsors
+          SPONSORS
         </div>
       </router-link>
 
       <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/contact">
         <div>
-          Contact
+          CONTACT
         </div>
       </router-link>
     </div>
@@ -149,6 +149,7 @@
 <style scoped>
   	
   #navbar{
+      
     position: sticky;
     top: 0px;
     height: 10vh;
@@ -157,7 +158,7 @@
     gap: 10vw;
     display:flex;
     align-items: center;
-    background-color: #3a0ca3;
+    background-color: rgba(0,0,0,0);
     color: #eeeeee;
     padding-left: 5vw;
     z-index: 2;
@@ -167,10 +168,10 @@
   	cursor: pointer;
   }
   .left-pravega img{
-    width: 200px;
+    width: 60px;
   }
   .right-nav{
-  	font-size: 1.5em;
+  	font-size: 1.2em;
     display:flex;
     gap: 1vw;
     justify-content: space-evenly;
@@ -180,7 +181,7 @@
     padding: 1vw;
     cursor:pointer;
     transition: color 600ms, background-color 600ms, background-position 500ms;
-
+    letter-spacing: 1px;
     background-size: 200% 200%;
     background-position: 50% 0%;
     border-radius: 18px;
@@ -280,7 +281,7 @@
     background-color: #3a0ca3;
     top: 10vh;
     left: 0vw;
-
+    letter-spacing: 2px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     background-image: linear-gradient(to bottom, #3a0ca3, #21075c);
@@ -298,7 +299,7 @@
 
   @media screen and (max-width: 1024px){
     .left-pravega img{
-      width: 70px;
+      width: 60px;
     }
     #navbar{
       display: none;

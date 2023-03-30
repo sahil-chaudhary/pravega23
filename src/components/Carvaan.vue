@@ -9,6 +9,10 @@ export default{
 	<div :class = "`title-flex`">
 		<Title text = "CARVAAN" color = "#4cc9f0"/>
 		<div :class = "`content`">
+			<div class = "car">
+				<img src = "/img/carvaan/car.png" />
+			</div>
+
 			<div :class = "`description`">
 				CARVAAN is Pravega’s ambitious new project, where we go to some of India’s biggest cities 
 				and host offline prelims for our esteemed cultural events. With CARVAAN, our goal is to conquer 
@@ -32,75 +36,75 @@ export default{
 				<router-link to="/carvaan/mumbai">
 					<Card2 
 					href = "https://google.com"
-					dataImage="/img/carvaan/mumbai.jpg"
+					dataImage="/img/carvaan/mumbai2.jpg"
 					size = "300px"
-					title = "Mumbai"
+					title = "MUMBAI"
 					hover = "20-21 May"
 					v-bind:href="`/carvaan/mumbai`" />
 				</router-link>
 
 				<router-link to="/carvaan/ahmedabad">
 					<Card2 
-					dataImage="/img/carvaan/ahmedabad.jpg"
+					dataImage="/img/carvaan/ahmedabad2.jpg"
 					size = "300px"
-					title = "Ahmedabad"
+					title = "AHMEDABAD"
 					hover = "27-28 May" />
 				</router-link>
 
 				<router-link to="/carvaan/delhi">
 					<Card2 
-					dataImage="/img/carvaan/delhi.jpg"
+					dataImage="/img/carvaan/delhi2.jpg"
 					size = "300px"
-					title = "Delhi"
+					title = "DELHI"
 					hover = "10-11 June"/>
 				</router-link>
 				
 
 				<router-link to="/carvaan/kolkata">
 					<Card2 
-					dataImage="/img/carvaan/kolkata.jpg"
+					dataImage="/img/carvaan/kolkata2.jpg"
 					size = "300px"
-					title = "Kolkata"
+					title = "KOLKATA"
 					hover = "17-18 June" />
 				</router-link>
 
 				<router-link to="/carvaan/bhubaneswar">
 					<Card2 
-					dataImage="/img/carvaan/bhubaneshwar.jpg"
+					dataImage="/img/carvaan/bhubaneswar2.jpg"
 					size = "300px"
-					title = "Bhubaneshwar"
+					title = "BHUBANESHWAR"
 					hover = "24-25 June" />
 				</router-link>
 				
 				<router-link to="/carvaan/hyderabad">
 					<Card2 
-					dataImage="/img/carvaan/hyderabad.jpg"
+					dataImage="/img/carvaan/hyderabad2.jpg"
 					size = "300px"
-					title = "Hyderabad"
+					title = "HYDERABAD"
 					hover = "8-9 July" />
 				</router-link>
 
 				<router-link to="/carvaan/kochi">
 					<Card2 
-					dataImage="/img/carvaan/kochi.jpg"
+					dataImage="/img/carvaan/indore.jpg"
 					size = "300px"
-					title = "Kochi"
+					title = "INDORE"
 					hover = "15-16 July" />
 				</router-link>
 
 				<router-link to="/carvaan/chennai">
 					<Card2 
-					dataImage="/img/carvaan/chennai.jpg"
+					dataImage="/img/carvaan/chennai2.jpg"
 					size = "300px"
-					title = "Chennai"
+					title = "CHENNAI"
 					hover = "22-23 July" />
 				</router-link>
 
 				<router-link to="/carvaan/bengaluru">
 					<Card2 
-					dataImage="/img/carvaan/bangalore.jpg"
+					dataImage="/img/carvaan/bengaluru.jpg"
 					size = "300px"
-					title = "Bangalore"
+					title = "BANGALORE"
 					hover = "19-20 August" />
 				</router-link>
 			</div>
@@ -111,6 +115,11 @@ export default{
 </template>
 
 <style scoped>
+	.car img{
+		width: 75vw;
+		height: auto;
+		margin: 0px;
+	}
 .description{
 	padding: 16px;
 	color: black;

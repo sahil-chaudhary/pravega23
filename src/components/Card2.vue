@@ -91,9 +91,11 @@ export default{
 			:style = "[cardBgImage, cardBgTransform]"
 			>
 			</div>
-
+			<div class = "card-title">{{title}}</div>
 			<div :class = "`card-info`">
-				<h1 :style = "`color:${this.color} `">{{title}} </h1>
+				
+				
+				<h1 :style = "`color:${this.color} `"> </h1>
 				<p>{{hover}}</p>
 			</div>
 		</div>
@@ -143,9 +145,10 @@ export default{
 }
 
 .card-wrap:hover .card-bg{
-	-webkit-transition: 1s ease-out, opacity 1s ease-out;
-	transition: 1s ease-out, opacity 1s ease-out;
+	-webkit-transition: 600ms ease-out, opacity 1s ease-out;
+	transition: 600ms ease-out, opacity 1s ease-out;
 	opacity: 1;
+	filter: brightness(0.5);
 }
 
 .card-wrap:hover .card{
@@ -172,7 +175,7 @@ export default{
   	transition: 1s ease-out;
 }
 .card-bg{
-	opacity: ;
+	filter: blur(px);
 	position: absolute;
 	top: -20px;
 	left: -20px;
@@ -185,6 +188,8 @@ export default{
 	-webkit-transition: 600ms ease-out, opacity 600s;
 	transition: 600ms ease-out, opacity 600ms;
 	pointer-events:  none;
+
+
 }
 
 .card-info{
@@ -224,6 +229,18 @@ export default{
 	opacity: 0;
 	transform: translateY(100%);
 	transition: 1s ease-out;
+}
+
+.card-info div{
+}
+
+.card-title{
+	position: absolute;
+	color: #fff;
+	font-size: 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 </style>

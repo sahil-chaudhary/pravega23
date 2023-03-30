@@ -48,7 +48,7 @@ export default{
             <span class = "lighter">
               HOURS
             </span>
-          </div>
+    </div>
           <div class = "date-part">
             <span class = "darker">
               {{this.minutes}}
@@ -69,24 +69,30 @@ export default{
 
 <style scoped>
   .date-part{
+    
   	display: grid;
-  	grid-template-columns:  repeat(2, 90px);
+  	grid-template-columns: 90px 270px;
   	gap: 0px;
     font-size: 50px;
-    color: #4cc9f0;
     font-weight: bold;
     line-height: 40px;
+    background-color: rgba(0,0,0,0);
   }
   .lighter{
-  	display: inline-block;
   	position: relative;
   	animation: appearLighter 0.8s ease-out;
+    
+    background-image: -webkit-linear-gradient(45deg, #f72585, #a92fde 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .darker{
   	display: inline-block;
   	position: relative;
-    opacity: 0.4;
+    color: #f72585;
     animation: appearDarker 2s ease-out;
+
+
   }
 
   @keyframes appearLighter{
@@ -110,7 +116,7 @@ export default{
 
   	}
   	100%{
-  		opacity: 0.4;
+  		opacity: 1;
   		left: 0px;
   	}
   }
