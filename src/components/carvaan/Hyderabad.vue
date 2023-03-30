@@ -45,11 +45,38 @@ export default{
             }
      
 
+    },
+    togglelasya(){
+        var x = document.getElementById("team-type").value;
+        if (x =='solo'){
+            document.getElementById("solo_contact").style.display = "block";
+            document.getElementById("team_contact").style.display = "none";
+        }
+        else if (x =='group'){
+            document.getElementById("team_contact").style.display = "block";
+            document.getElementById("solo_contact").style.display = "none";
+        }
+    },
+    show(){
+        document.getElementById("Send_button").style.display = "block";
+    },
+    hide(){
+        document.getElementById("Send_button").style.display = "none";
+    },
+    cres_ins(){
+        var x = document.getElementById("category").value;
+        if (x == 'Instrumental'){
+            document.getElementById("instrument_stuff").style.display = "block";
+        }
+        else{
+            document.getElementById("instrument_stuff").style.display = "none";
+        }
+    },
     }
 
     
     }
-}
+
 
 
 
@@ -59,26 +86,22 @@ export default{
 <div :class = "`title-flex`">
         <Title text = "DELHI" color = "#dd6e42"/>
         <div :class = "`content`">
-            <p :class="`battleofbands`">
-                <u>Battle Of Bands</u>
-            </p>
-            <p :style="`font-size:large`">Lorem ipsum dodet</p>
-            <h2 style="color:black; margin: 0 10px; text-align: center;">Registration</h2>
+            <h2 style="color:black; margin: 10px 10px; text-align: center;">Registration</h2><br>
+            <p style="text-align: center;">Choose your competition, then press the "Submit" button and fill out the required form and press "Send".</p>
             <div :class="`mainn`">
                 <form action="/" class="testbox">
-
+                    <input type ="hidden" name="city" value="hyderabad"/>
                     <div class = "item">
                         
                             <label class="label" for="selection">Please select the competition:</label><br>
-                            <select id="selection" required >
+                            <select id="selection" @input ="toggle" required >
                              
-                                    <option value="bob">Battle of Bands</option>
+                                    <option value="bob" >Battle of Bands</option>
                                     <option value="eleg">Elegante</option>
                                     <option value="Cres">Crescendo</option>
                                     <option value="pr_and_foot">Proscenium and Footprints</option>
                                     <option value="lasya">Lasya</option>
                             </select>
-                            <button type="button" @click="toggle">Submit</button>
                     </div>        
                    <div id = "bob">
                         
@@ -99,29 +122,159 @@ export default{
                         </div>
                     </div>             
                     <div id = "eleg">
-                       
-                            <label class="label" for="email">Email</label><br>
-                        <div class = "name-item">   
-                            <input type="email" name="email" placeholder="Enter your email" required />
+                    <fieldset>
+                    <legend>Elegante</legend>
+                       <div class ="item">
+                            
+                        <label class="label" for="name">Name of college/Institute:</label><br>
+                        <div class = "name-item">
+                            <input type="text" name="name" placeholder="Enter college name" required />
                         </div>
+                       </div>
+
+                        <div class ="item">
+                             
+                        <label class="label" for="name">Name of the team:</label><br>
+                        <div class = "name-item">
+                             <input type="text" name="name" placeholder="Enter team name" required />
+                        </div>
+                        </div>
+                        <div class ="item">
+                        <label class="label" for="member-details">Enter team members names along with their roles (eg. as a model, designer etc.):</label><br>   
+                        <textarea id="member-details" name="member-name" placeholder="Enter team members names along with their roles" required></textarea>
+                        </div>
+                        <div class ="item">
+                            <div id ="member1">
+                                <label class="label" for="member1-name">Member 1:</label><br>
+                                <div class = "name-item">
+                                    <input type="email" name="member1-email" placeholder="Enter member 1 email" required />
+                                </div>
+                                <div class = "name-item">
+                                    <input type="number" name="member1-number" placeholder="Enter member 1 number" required />
+                                </div>
+                            </div>
+                            <div id ="member2">
+                                <label class="label" for="member2-name">Member 2:</label><br>
+                                <div class = "name-item">
+                                    <input type="email" name="member2-email" placeholder="Enter member 2 email" required />
+                                </div>
+                                <div class = "name-item">
+                                    <input type="number" name="member2-number" placeholder="Enter member 2 number" required />
+                                </div>
+                            </div>
+                            <div id ="member3">
+                                <label class="label" for="member3-name">Member 3:</label><br>
+                                <div class = "name-item">
+                                    <input type="email" name="member3-email" placeholder="Enter member 3 email" required />
+                                </div>
+                                <div class = "name-item">
+                                    <input type="number" name="member3-number" placeholder="Enter member 3 number" required />
+                                </div>
+                            </div>        
+                        </div>    
+
+                    </fieldset>
+
+                       
                     </div>    
                     <div id = "Cres">
-                        
-                            <label class="label" for="remarks">Remarks</label><br>
-                        <div class = "name-item">
-                            <textarea name="remarks" placeholder="Enter your remarks"></textarea>
-                        </div>
+                        <fieldset>
+                         <legend>Crescendo</legend>   
+                            <div class ="item">
+                                <label class="label" for="category">Category:</label><br>
+                                <select id="category" @input = "cres_ins" required >
+                                    <option value="Vocals_eastern">Vocals(Eastern)</option>
+                                    <option value="Vocals_western">Vocals(Western)</option>
+                                    <option value="Instrumental">Instrumental</option>
+                                </select>
+                            </div>
+                            <div class = "item" id ="instrument_stuff">
+                                <label class="label" for="instrument">Which Instrument are you playing?</label><br>
+                                <div class = "name-item">
+                                    <input type="text" name="name" placeholder="Enter instrument name" required />
+                                </div>
+                            </div>
+                            <div class ="item">
+                                <label class="label" for="name">Name of participant:</label><br>
+                                <div class = "name-item">
+                                    <input type="text" name="name" placeholder="Enter name" required />
+                                </div>
+                            </div>
+                            <div class ="item">
+                                <label class="label" for="edu">Educational details:</label><br>
+                                <div class = "name-item">
+                                    <input type="text" name="name" placeholder="Enter college name" required />
+                                </div>
+                                <div class = "name-item">
+                                    <input type="text" name="name" placeholder="Enter year of study" required />
+                                </div>    
+                            </div>  
+                            <div class = "item">
+                                <label class="label" for="contact">Contact details:</label><br>
+                                <div class = "name-item">
+                                    <input type="number" name="name" placeholder="Enter Phone No." required />
+                                </div>
+                                <div class = "name-item">
+                                    <input type="email" name="name" placeholder="Enter Email" required />
+                                </div>    
+                            </div>      
+                        </fieldset>
                     </div> 
                     <div id = "lasya">
-                        
-                            <label class="label" for="remarks">Remarks</label><br>
-                        <div class = "name-item">
-                            <textarea name="remarks" placeholder="Enter your remarks"></textarea>
-                        </div>
+                        <fieldset>
+                         <legend>Lasya</legend>   
+                         <div class ="item">
+                            <label class="label" for="team-type">Type of participation:</label><br>
+                            <select id="team-type" @input = "togglelasya" required >
+                                <option value="solo">Solo</option>
+                                <option value="group">Team</option>
+                            </select>  
+                         </div>
+                         <div class ="item">
+                            <label class="label" for="name">Name of participant/team:</label><br>
+                            <div class = "name-item">
+                                <input type="text" name="name" placeholder="Enter name" required />
+                            </div>     
+                         </div>
+                         <div class ="item">
+                            <label class="label" for="name">Name of college/dance school:</label><br>
+                            <div class = "name-item">
+                                <input type="text" name="name" placeholder="Enter college name" required />
+                            </div>
+                         </div>   
+                         <div class = "item" id ="solo_contact">
+                            <label class="label" for="name">Contact details(solo):</label><br>
+                            <div class = "name-item">
+                                <input type="number" name="number" placeholder="Enter number" required />
+                            </div>
+                            <div class = "name-item">
+                                <input type="number" name="number" placeholder="Enter emergency contact" required />
+                            </div>
+
+                         </div>
+                         <div class =  "item" id ="team_contact">
+                            <label class="label" for="name">Contact details(team):</label><br>
+                            <textarea name="Name of all members" placeholder="Enter your names"></textarea>
+                            <div class = "name-item">
+                               <input type="number" name="number" placeholder="Enter Contact 1" required />
+                               <input type="number" name="number" placeholder="Enter Contact 2" required />
+                               <input type="number" name="number" placeholder="Enter Contact 3" required />
+                            </div>
+                            
+                         </div> 
+                         <p> We hope that you've read through all the term and conditions for Lasya, and are willing to agree to them. You cannot submit the form unless you do, so please read through the document carefully!</p><br>
+                         <div class = "radio_buttons">
+                            <label for="agree" style="display:inline;">I agree to the terms and conditions</label><br>
+                            <input type ="radio" id ="agree" name="choice" value="agree" style="display:inline; align-items: start;" @input = "show">
+                            <label for="agree">I do not agree to the terms and conditions</label><br> 
+                            <input type ="radio" id ="notagree" name="choice" value="Not agree" @input = "hide">
+                        </div>    
+                        </fieldset>
+
                     </div>
                      
                    
-                    <div class="btn-block">
+                    <div class="btn-block" id="Send_button">
                         <button type="submit" href="/">Send</button>
                     </div>
                 </form>
@@ -142,11 +295,22 @@ export default{
     width: 75vw;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
+}
+
+.radio_buttons{
+    display: inline;
+    align-items: start;
 }
 
 #bob, #eleg, #Cres, #pr_and_foot, #lasya{
     display: none;
 }
+
+#solo_contact, #team_contact, #instrument_stuff{
+    display: none;
+}
+
 
 .battleofbands{
    color:black;
