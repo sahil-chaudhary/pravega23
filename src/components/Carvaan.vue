@@ -9,15 +9,11 @@ export default{
 	<div :class = "`title-flex`">
 		<Title text = "CARVAAN" color = "#4cc9f0"/>
 		<div :class = "`content`">
-			<div class = "car">
-				<img src = "/img/carvaan/car.png" />
-			</div>
 
+			
 			<div :class = "`description`">
-				CARVAAN is Pravega’s ambitious new project, where we go to some of India’s biggest cities 
-				and host offline prelims for our esteemed cultural events. With CARVAAN, our goal is to conquer 
-				new horizons and provide more students the opportunity to express themselves via Pravega.
-                <br><br>
+				Carvaan is a debut project by Pravega aimed at increasing outreach for our cultural events. As a part of Carvaan, Pravega will travel to some of India’s biggest cities- opening new doors of opportunities for thousands of students. Offline prelims will be conducted for our flagship battles in Singing, Dancing, Painting, and more. Selected participants from all over India will then collect at our campus in Bengaluru for a thrilling final. 
+				<br><br>
 
 				Our four main events under CARVAAN are:
 				<ul>
@@ -115,11 +111,6 @@ export default{
 </template>
 
 <style scoped>
-	.car img{
-		width: 75vw;
-		height: auto;
-		margin: 0px;
-	}
 .description{
 	padding: 16px;
 	color: black;
