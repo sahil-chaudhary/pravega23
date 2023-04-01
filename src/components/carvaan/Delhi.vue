@@ -5,17 +5,20 @@ import {useScriptTag} from '@vueuse/core'
 useScriptTag('https://embed.typeform.com/next/embed.js')
 
 export default {
-    components: { Title }
+    components: { Title },
+    mounted(){
+        let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('src', 'https://embed.typeform.com/next/embed.js')
+      document.head.appendChild(recaptchaScript)
+
+    }
 }
 </script>
 
 <template>
     <div :class="`title-flex`">
         <Title text="DELHI" color="#dd6e42" />
-        <div :class="`content`">
-            <p :class="`battleofbands`">
-                <u>Battle Of Bands</u>
-            </p>    
+        <div :class="`content`">   
            <!-- <p :style="`font-size:large`">Lorem ipsum dodet</p>
             <h2 style="color:black;margin: 0 10px;">Registration</h2>
             <div :class="`mainn`">

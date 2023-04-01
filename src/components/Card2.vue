@@ -81,7 +81,6 @@ export default{
 	@mousemove="handleMouseMove"
 	@mouseenter="handleMouseEnter"
 	@mouseleave="handleMouseLeave"
-	@click="window.open(this.href)"
 	ref="card">
 		<div 
 		:class="`card`"
