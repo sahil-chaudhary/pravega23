@@ -14,18 +14,18 @@ export default{
 				OUR PREVIOUS <span class = "grad">SPONSORS</span>
 			</div>
 			<div class = "links">
-				<a href = "https://www.airbus.com/"><img src = "img/sponsors/airbus2.png" class = "wide"></a>
+				<a href = "https://www.airbus.com/"><img src = "/img/sponsors/airbus2.png" class = "wide"></a>
 
-				<a href = "https://www.ibm.com/"><img src = "img/sponsors/ibm.png" class = "wide"></a>
+				<a href = "https://www.ibm.com/"><img src = "/img/sponsors/ibm.png" class = "wide"></a>
 
-				<a href = "https://www.mercedes-benz.com/"><img src = "img/sponsors/mercedezbenz.png" class = "wide"></a>
+				<a href = "https://www.mercedes-benz.com/"><img src = "/img/sponsors/mercedezbenz.png" class = "wide"></a>
 			</div>
 			<div class = "links">
 				
-				<a href = "https://www.redbull.com/"><img src = "img/sponsors/redbull.png" class = "normal"></a>
-				<a href = "https://www.shell.com/"><img src = "img/sponsors/shell.png" class = "normal"></a>
-				<a href = "https://www.pizzahut.co.in/"><img src = "img/sponsors/pizzahut.png" class = "normal"></a>
-				<a href = "https://www.monsterenergy.com/"><img src = "img/sponsors/monster.png" class = "normal"></a>
+				<a href = "https://www.redbull.com/"><img src = "/img/sponsors/redbull.png" class = "normal"></a>
+				<a href = "https://www.shell.com/"><img src = "/img/sponsors/shell.png" class = "normal"></a>
+				<a href = "https://www.pizzahut.co.in/"><img src = "/img/sponsors/pizzahut.png" class = "normal"></a>
+				<a href = "https://www.monsterenergy.com/"><img src = "/img/sponsors/monster.png" class = "normal"></a>
 
 			</div>
 
