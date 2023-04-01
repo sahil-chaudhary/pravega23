@@ -231,8 +231,6 @@ export default{
 	transition: 1s ease-out;
 }
 
-.card-info div{
-}
 
 .card-title{
 	position: absolute;

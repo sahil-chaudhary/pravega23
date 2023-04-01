@@ -1,16 +1,22 @@
 <script>
 import Title from './Title.vue'
 import Card2 from "./Card2.vue"
+
 export default{
-	components:{Title, Card2}
+	components:{Title, Card2},
+	methods:{
+	transition(){
+		document.querySelector(".after-transition").style.display = "block";
+	}
 }
+}
+
 </script>
 <template>
 	<div :class = "`title-flex`">
 		<Title text = "CARVAAN" color = "#4cc9f0"/>
-		<div :class = "`content`">
 
-			
+		<div :class = "`content`">
 			<div :class = "`description`">
 				Carvaan is a debut project by Pravega aimed at increasing outreach for our cultural events. As a part of Carvaan, Pravega will travel to some of India’s biggest cities- opening new doors of opportunities for thousands of students. Offline prelims will be conducted for our flagship battles in Singing, Dancing, Painting, and more. Selected participants from all over India will then collect at our campus in Bengaluru for a thrilling final. 
 				<br><br>
@@ -104,13 +110,12 @@ export default{
 					hover = "19-20 August" />
 				</router-link>
 			</div>
-
-			
-		</div>
+		</div>	
 	</div>
 </template>
 
 <style scoped>
+
 .description{
 	padding: 16px;
 	color: black;
@@ -121,12 +126,12 @@ export default{
 .title-flex{
 	display: flex;
 	height: 90vh;
+	width: 100vw;
 }
 .content{
 	background-color: #eeeeee;
 	height: auto;
 	border-top-left-radius: 25px;
-
 	border-top-right-radius: 25px;
 	overflow-y: scroll;
 	color: #eeeeee;

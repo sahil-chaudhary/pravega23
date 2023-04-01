@@ -16,13 +16,13 @@ export default{
         <div class = "landing-title">
           <div class = "logo">
               <div class = "desc">
-                India's biggest Scitech Cultural Fest
+                India's <span class = "grad">biggest</span> SciTech-Cultural Fest
               </div>
               <img src = "/img/logo/pravega.png" class = "pravega"/>
               <img src = "/img/logo/x.png" class = "X"/>
               
               <div class = "location">
-                &#x25cf Indian Institute of Science, Bangalore 
+               Indian Institute of Science, Bangalore &#x25cf Nov 2023
               </div>
           </div>
         </div>
@@ -53,11 +53,15 @@ export default{
   }
 
   .logo{
+    width: fit-content;
+    position: relative;
+    color: white;
     padding-top: 10vh;
     opacity: 1;
-    gap: 10px;
     height: 100px;
-    width: auto;
+
+    left: 50%;
+    transform: translateX(-50%);
   }
   .logo img{
     opacity: 1;
@@ -66,20 +70,24 @@ export default{
   }
 
   .desc{
+
+    width: fit-content;
     position: relative;
     z-index: 10;
-    background-image: -webkit-linear-gradient(0deg, #f72585 0%, #a92fde 100%);
+    padding-bottom: 15px;
+  }
+  .grad{
+        background-image: -webkit-linear-gradient(0deg, #f72585, #a92fde 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .location{
+
+    width: fit-content;
     position: relative;
     z-index: 10;
-    padding-top: 25px;
-    background-image: -webkit-linear-gradient(0deg, #f72585 0%, #a92fde 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding-top: 15px;
   }
   .timer{
     position: relative;

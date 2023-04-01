@@ -1,5 +1,8 @@
 <script>
 import Title from '../Title.vue'
+import {useScriptTag} from '@vueuse/core'
+
+useScriptTag('https://embed.typeform.com/next/embed.js')
 
 export default {
     components: { Title }
@@ -12,7 +15,8 @@ export default {
         <div :class="`content`">
             <p :class="`battleofbands`">
                 <u>Battle Of Bands</u>
-            <p :style="`font-size:large`">Lorem ipsum dodet</p>
+            </p>    
+           <!-- <p :style="`font-size:large`">Lorem ipsum dodet</p>
             <h2 style="color:black;margin: 0 10px;">Registration</h2>
             <div :class="`mainn`">
                 <form action="/" class="testbox">
@@ -45,11 +49,11 @@ export default {
                     <div class="btn-block">
                         <button type="submit" href="/">Send</button>
                     </div>
-                </form>
+                </form>-->
+                <div data-tf-widget="rS1TgboY" data-tf-opacity="100" data-tf-iframe-props="title=Event Registration (copy)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;">
             </div>
-            </p>
+            </div>
         </div>
-    </div>
 </template>
 
 <style scoped>

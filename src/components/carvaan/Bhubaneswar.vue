@@ -1,6 +1,9 @@
 <script>
 import Title from '../Title.vue'
 import Soon from '../Soon.vue'
+import {useScriptTag} from '@vueuse/core'
+
+useScriptTag('https://embed.typeform.com/next/embed.js')
 export default{
 	components:{Title, Soon}
 }
@@ -13,6 +16,8 @@ export default{
 			<p :class="`battleofbands`">
                 <u>Battle Of Bands</u>
             </p>
+			<div data-tf-widget="rS1TgboY" data-tf-opacity="100" data-tf-iframe-props="title=Event Registration (copy)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;">
+            </div>
 		</div>
 	</div>
 </template>
