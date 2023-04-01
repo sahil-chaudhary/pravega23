@@ -1,7 +1,7 @@
 <script>
 import Title from './Title.vue'
 import Card2 from "./Card2.vue"
-import { METHODS } from 'http';
+
 export default{
 	components:{Title, Card2},
 	methods:{
