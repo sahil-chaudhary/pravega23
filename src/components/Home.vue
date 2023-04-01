@@ -25,6 +25,10 @@ export default{
                Indian Institute of Science, Bangalore &#x25cf Nov 2023
               </div>
           </div>
+          <div class = "circle"></div>
+          <div class = "hollow-circle"></div>
+          <div class = "rectangle"></div>
+          <div class = "hollow-rectangle"></div>
         </div>
 
         <div class = "about-pravega">
@@ -33,6 +37,7 @@ export default{
 </template>
 
 <style scoped>
+
     .landing{
       position: absolute;
       top: 0;
@@ -44,6 +49,54 @@ export default{
       background-position: center;
       filter: brightness(0.3);
     }
+    @keyframes move {
+	to { transform: translateY(calc(5vw - 100%)) }
+}
+    .hollow-rectangle{
+      position: absolute;
+      z-index: 1;
+      top: 15%;
+      left: 30%;
+      
+      height: 300px;
+      width: 200px;
+      border: 2px solid #555;
+    }
+    .rectangle{
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      height: 50px;
+      width: 50px;
+      transform: translateY(calc(-1*(5vw - 100%)));
+      background-color: #555;
+      animation: move 2s ease-in-out infinite alternate;
+}
+    
+    .hollow-circle{
+      position: absolute;
+      top: 15%;
+      left: 90%;
+      height: 50px;
+      width: 50px;
+      transform: translateY(calc(-1*(5vw - 100%)));
+      border: 2px solid #555;
+      border-radius: 50%;
+      animation: move 2s ease-in-out infinite alternate;
+    }
+    
+    .circle {
+      position: absolute;
+      top: 90%;
+      left: 10%;
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+  transform: translateY(calc(-1*(5vw - 100%)));
+  animation: move 2s ease-in-out infinite alternate;
+}
+
 
     .landing-title{
       height: 90vh;
@@ -62,7 +115,7 @@ export default{
     padding-top: 10vh;
     opacity: 1;
     height: 100px;
-
+    z-index: 2;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -70,6 +123,7 @@ export default{
     opacity: 1;
     height: 75px;
     width: auto;
+    
   }
 
   .desc{
