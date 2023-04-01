@@ -65,7 +65,7 @@ export default{
 }
 .title{
 	--theme-color: v-bind("color");
-	background-image: linear-gradient(to top, var(--theme-color) -10%, #3a0ca6 50%);
+	background-image: linear-gradient(to top, var(--theme-color) -10%, #000000 50%);
 	width: 25vw;
 	color: var(--theme-color);
 }

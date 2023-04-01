@@ -26,6 +26,9 @@ export default{
               </div>
           </div>
         </div>
+
+        <div class = "about-pravega">
+        </div>
   </div>
 </template>
 
@@ -65,7 +68,7 @@ export default{
   }
   .logo img{
     opacity: 1;
-    height: 100px;
+    height: 75px;
     width: auto;
   }
 
@@ -128,5 +131,11 @@ export default{
       opacity: 1;
       right: 0px;
     }
+  }
+
+
+  .about-pravega{
+    background-color: #000000;
+    height: 100vh;
   }
 </style>

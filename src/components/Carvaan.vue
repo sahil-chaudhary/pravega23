@@ -115,7 +115,13 @@ export default{
 </template>
 
 <style scoped>
+body{
+	background-image: url("/img/home/landing.PNG");
+      background-size: 130%;
+      background-position: center;
+      filter: brightness(0.3);
 
+}
 .description{
 	padding: 16px;
 	color: black;

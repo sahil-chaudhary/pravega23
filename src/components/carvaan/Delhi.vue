@@ -67,7 +67,7 @@ export default {
 
 .content {
     background-color: #eeeeee;
-
+    overflow-y: hidden;
 }
 
 .battleofbands {
