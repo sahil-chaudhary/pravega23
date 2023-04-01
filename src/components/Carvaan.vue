@@ -1,18 +1,29 @@
 <script>
 import Title from './Title.vue'
 import Card2 from "./Card2.vue"
+import { METHODS } from 'http';
 export default{
-	components:{Title, Card2}
+	components:{Title, Card2},
+	methods:{
+	transition(){
+		document.querySelector(".after-transition").style.display = "block";
+	}
 }
+}
+
 </script>
 <template>
 	<div :class = "`title-flex`">
-		<Title text = "CARVAAN" color = "#4cc9f0"/>
+		<!--<Title text = "CARVAAN" color = "#4cc9f0"/>-->
 		<div :class = "`content`">
 			<div class = "car">
 				<img src = "/img/carvaan/car.png" />
+				<div class = "title">
+					<h1>CARVAAN</h1>
+					<button type = "submit" class = "btn btn-primary" @click = "transition">Learn More</button>
+				</div>	
 			</div>
-
+		<div :class = "`after-transition`">	
 			<div :class = "`description`">
 				CARVAAN is Pravega’s ambitious new project, where we go to some of India’s biggest cities 
 				and host offline prelims for our esteemed cultural events. With CARVAAN, our goal is to conquer 
@@ -109,14 +120,44 @@ export default{
 				</router-link>
 			</div>
 
-			
+		</div>	
 		</div>
 	</div>
 </template>
 
 <style scoped>
+.btn {
+  background-color: #4cc9f0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.after-transition{
+	display: none;
+	transition: display 1s;
+}
+.car{
+	position: relative;
+	transition: display 1s;
+}
+.title{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
+}
 	.car img{
-		width: 75vw;
+		width: 100vw;
 		height: auto;
 		margin: 0px;
 	}
@@ -130,12 +171,13 @@ export default{
 .title-flex{
 	display: flex;
 	height: 90vh;
+	width: 100vw;
 }
 .content{
 	background-color: #eeeeee;
 	height: auto;
 	border-top-left-radius: 25px;
-
+	width: 100%;
 	border-top-right-radius: 25px;
 	overflow-y: scroll;
 	color: #eeeeee;

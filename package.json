@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^9.13.0",
     "vite-plugin-require": "^1.1.10",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"

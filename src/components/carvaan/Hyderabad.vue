@@ -1,8 +1,12 @@
 <script>
 import Title from '../Title.vue'
 import Soon from '../Soon.vue'
+import {useScriptTag} from '@vueuse/core'
+
+useScriptTag('https://embed.typeform.com/next/embed.js')
 export default{
     components:{Title, Soon},
+    
     methods:{
         toggle(){
             var x = document.getElementById("selection").value;
@@ -85,8 +89,14 @@ export default{
 <template>
 <div :class = "`title-flex`">
         <Title text = "DELHI" color = "#dd6e42"/>
-        <div :class = "`content`">
-            <h2 style="color:black; margin: 10px 10px; text-align: center;">Registration</h2><br>
+        <div :class = "`content`" id="form_page">
+            <div data-tf-widget="rS1TgboY" data-tf-opacity="100" data-tf-iframe-props="title=Event Registration (copy)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;">
+            </div>
+        
+
+            
+
+            <!--<h2 style="color:black; margin: 10px 10px; text-align: center;">Registration</h2><br>
             <p style="text-align: center;">Choose your competition, then press the "Submit" button and fill out the required form and press "Send".</p>
             <div :class="`mainn`">
                 <form action="/" class="testbox">
@@ -104,11 +114,35 @@ export default{
                             </select>
                     </div>        
                    <div id = "bob">
-                        
-                            <label class="label" for="name">Name:</label><br>
-                        <div class = "name-item">
-                            <input type="text" name="name" placeholder="Enter your name" required />
+                        <div class = "item">
+                            <label class="label" for="name">Name of the band:</label><br>
+                            <div class = "name-item">
+                                <input type="text" name="name" placeholder="Enter band name" required />
+                            </div>
                         </div>
+                        <div class = "item">
+                            <label for ="Band details">Band details:</label><br>
+                            <textarea name="description" placeholder="Enter a short description of your band" required></textarea>
+                        </div>
+                        <div class = "item">
+                            <label for ="Band members">Band members:</label><br>
+                            <textarea name="description" placeholder="List out your members and their instruments" required></textarea>
+                        </div>
+                        <div class ="item">
+                             <label for="myfile">Select a music sample:</label><br>
+                             <input type="file" id="myfile" name="myfile"><br><br>
+                        </div>
+                        <div class =  "item" id ="team_contact">
+                            <label class="label" for="name">Contact details(team):</label><br>
+                            <div class = "name-item">
+                               <input type="number" name="number" placeholder="Enter Contact 1" required />
+                               <input type="number" name="number" placeholder="Enter Contact 2" required />
+                               <input type="number" name="number" placeholder="Enter Contact 3" required />
+                            </div>
+                            
+                         </div> 
+
+                        
                     </div>
                     <div id = "pr_and_foot">
                         
@@ -278,8 +312,8 @@ export default{
                         <button type="submit" href="/">Send</button>
                     </div>
                 </form>
-            </div>
-        </div>
+            </div>-->
+        </div> 
     </div>
 </template>
 
@@ -295,7 +329,7 @@ export default{
     width: 75vw;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 
 .radio_buttons{
