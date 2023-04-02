@@ -23,7 +23,7 @@ export default{
 	padding: 16px;
 	color: black;
 	font-size: large;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 }
 	
 .title-flex{
