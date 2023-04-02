@@ -20,7 +20,7 @@ export default{
 		<Title text = "DELHI" color = "#dd6e42"/>
 		<div :class = "`content`">
 			<div data-tf-widget="rS1TgboY" data-tf-opacity="100" data-tf-iframe-props="title=Event Registration (copy)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;">
-            </div>
+         </div>
 		</div>
 	</div>
 </template>
@@ -33,6 +33,8 @@ export default{
 .content{
 	background-color: #eeeeee;
 	width: 75vw;
+		border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 .battleofbands{
    color:black;

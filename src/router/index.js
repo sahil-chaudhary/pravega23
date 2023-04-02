@@ -17,8 +17,8 @@ import Bengaluru from "../components/carvaan/Bengaluru.vue"
 import Chennai from "../components/carvaan/Chennai.vue"
 import Hyderabad from "../components/carvaan/Hyderabad.vue"
 import Kolkata from "../components/carvaan/Kolkata.vue"
-
-
+import Register from "../components/carvaan/Register.vue"
+import Cities from "../components/carvaan/Cities.vue"
 const routes = [
 	{path: "/", name: "Home", component: Home},
 	{path: "/carvaan", name: "Carvaan", component: Carvaan},
@@ -36,7 +36,9 @@ const routes = [
 	{path:"/carvaan/bengaluru",name:"Bengaluru",component:Bengaluru},
 	{path:"/carvaan/chennai",name:"Chennai",component:Chennai},
 	{path:"/carvaan/hyderabad",name:"Hyderabad",component:Hyderabad},
-	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata}
+	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata},
+	{path: "/carvaan/cities", name:"Cities",component:Cities},
+	{path: "/carvaan/register", name:"Register",component:Register}
 ]
 
 const router = createRouter({

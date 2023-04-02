@@ -168,7 +168,7 @@
   	cursor: pointer;
   }
   .left-pravega img{
-    width: 60px;
+    width: 40px;
   }
   .right-nav{
   	font-size: 1.2em;

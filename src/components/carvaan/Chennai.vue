@@ -33,6 +33,8 @@ export default{
 .content{
 	background-color: #eeeeee;
 	width: 75vw;
+		border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 .battleofbands{
    color:black;

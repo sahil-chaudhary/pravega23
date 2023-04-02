@@ -28,6 +28,40 @@ export default{
         </div>
 
         <div class = "about-pravega">
+          <div class = "pravega-flex">
+            <div class = "pravega-text">
+              <div class = "pravega-title grad">
+                About Pravega
+              </div>
+              <div class = "pravega-desc">
+                Pravega is the <span class = "grad">undergraduate fest</span> of IISc, featuring exemplary events in Science, Technology, and Culture. This year marks the 10th edition of Pravega, giving us all the more motivation to make this edition the most memorable Pravega ever. Pravega sees exemplary participation in its quizzes, stunning cultural competitions, and stellar concerts. 
+              </div>
+            </div>
+
+            <div class = "pravega-img">
+              <img src = "/img/home/gulmohar.jpg">
+            </div>
+          </div>
+        </div>
+
+
+        <div class = "about-iisc">
+          <div class = "iisc-flex">
+            
+            <div class = "iisc-img">
+              <img src = "/img/home/gulmohar.jpg">
+            </div>
+
+            <div class = "iisc-text">
+              <div class = "iisc-title grad">
+                About IISc
+              </div>
+              <div class = "iisc-desc">
+                The Indian Institute of Science is India's <span class = "grad">top ranked research institution</span> and a scientific force to be reckoned with on the global stage. With a focus on interdisciplinary research in the undergraduate program, supported by preeminent faculty from each major discipline and a flourishing environment of extracurricular activities - IISc provides a suitable setting for the holistic growth of bright young bright minds.
+              </div>
+            </div>
+
+          </div>
         </div>
   </div>
 </template>
@@ -38,16 +72,17 @@ export default{
       top: 0;
       height: 100vh;
       width: 100vw;
-      overflow: hidden;
       background-image: url("/img/home/landing.PNG");
       background-size: 130%;
       background-position: center;
       filter: brightness(0.3);
+      overflow: visible;
     }
 
     .landing-title{
       height: 90vh;
       background-color: rgba(0,0,0,0);
+      overflow: visible;
     }
   #home{
     height: 90vh;
@@ -80,7 +115,7 @@ export default{
     padding-bottom: 15px;
   }
   .grad{
-        background-image: -webkit-linear-gradient(0deg, #f72585, #a92fde 100%);
+      background-image: -webkit-linear-gradient(0deg, #f72585, #a92fde 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -133,9 +168,59 @@ export default{
     }
   }
 
+  .pravega-flex{
+    gap: 20px;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
+  .pravega-flex>div{
+    flex: 50%;
+  }
   .about-pravega{
     background-color: #000000;
     height: 100vh;
+    overflow: visible;
+  }
+  .pravega-title{
+    font-size: 50px;
+    width: fit-content;
+  }
+  .pravega-desc{
+    color: white;
+  }
+  .pravega-img img{
+    width: 40vw;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .iisc-flex{
+    gap: 20px;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .iisc-flex>div{
+    flex: 50%;
+  }
+  .about-iisc{
+    background-color: #000000;
+    height: 100vh;
+
+  }
+  .iisc-title{
+    font-size: 50px;
+    width: fit-content;
+  }
+  .iisc-desc{
+    color: white;
+  }
+  .iisc-img img{
+    width: 40vw;
+    border-radius: 20px;
+    padding: 10px;
   }
 </style>
