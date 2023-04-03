@@ -18,10 +18,8 @@ export default{
 
 		<div :class = "`content`">
 			<div :class = "`description`">
-				Carvaan is a debut project by Pravega aimed at increasing outreach for our cultural events. As a part of Carvaan, Pravega will travel to some of India’s biggest cities- opening new doors of opportunities for thousands of students. Offline prelims will be conducted for our flagship battles in Singing, Dancing, Painting, and more. Selected participants from all over India will then collect at our campus in Bengaluru for a thrilling final. 
-				<br><br>
 
-				Our four main events under CARVAAN are:
+				Our five main events under CARVAAN are:
 				<ul>
 					<li>Proscenium and Footprints: The stage and street play event of Pravega</li>
 					<li>Battle of Bands: No introduction needed of course! </li>
@@ -128,6 +126,9 @@ export default{
 	width: 100vw;
 }
 .content{
+	position: relative;
+	top: 10vh;
+	height: 90vh;
 	background-color: #eeeeee;
 	height: auto;
 	border-top-left-radius: 25px;

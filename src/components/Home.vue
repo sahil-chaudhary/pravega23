@@ -74,7 +74,7 @@ export default{
 
     .landing{
       position: absolute;
-      top: 10%;
+      top: 0;
       height: 100vh;
       width: 100vw;
       background-image: url("/img/home/landing.PNG");
@@ -83,6 +83,9 @@ export default{
       filter: brightness(0.3);
       overflow: visible;
     }
+
+
+
     @keyframes move {
 	to { transform: translateY(calc(4vw - 100%)) }
 }
@@ -159,41 +162,7 @@ export default{
     height: 3.75vw;
     width: auto;
     
-  }
-  @media screen and (max-width: 1024px) {
-    .logo img{
-      height: 10vw;
-    }
-    .location{
-      font-size: 3vw;
-    }
-    .hollow-rectangle{
-      height: 45vw;
-      width: 35vw;
-      top: 15%;
-    }
-    .hollow-circle{
-      left:80%;
-      height: 3vw;
-      width: 3vw;
-    }
-    .circle{
-      top: 50%;
-      height: 3vw;
-      width: 3vw;
-    }
-    .rectangle{
-      height: 3vw;
-      width: 3vw;
-    }
-    .landing-title{
-      height: 80vw;
-    }
-    .landing{
-      height: 73vw;
-    }
-  }
-    
+  } 
   
 
   .desc{
@@ -279,7 +248,9 @@ export default{
     width: fit-content;
   }
   .pravega-desc{
+    font-size: 20px;
     color: white;
+    text-align: justify;
   }
   .pravega-img img{
     width: 40vw;
@@ -306,11 +277,95 @@ export default{
     width: fit-content;
   }
   .iisc-desc{
+    font-size: 20px;
     color: white;
+    text-align: justify;
   }
   .iisc-img img{
     width: 40vw;
     border-radius: 20px;
     padding: 10px;
   }
+
+@media screen and (max-width: 1024px){
+  .logo img{
+      height: 10vw;
+    }
+    .logo{
+      top: 20vh;
+    }
+    .desc{
+      font-size: 3vw;
+    }
+    .location{
+      font-size: 3vw;
+    }
+    .hollow-rectangle{
+      height: 45vw;
+      width: 35vw;
+      top: 15%;
+    }
+    .hollow-circle{
+      left:80%;
+      height: 3vw;
+      width: 3vw;
+    }
+    .circle{
+      top: 50%;
+      height: 3vw;
+      width: 3vw;
+    }
+    .rectangle{
+      height: 3vw;
+      width: 3vw;
+    }
+
+  .landing{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+
+
+  .about-pravega{
+    align-items: center;
+    height: auto;
+  }
+  .pravega-title{
+    font-size: 25px;
+  }
+  .pravega-desc{
+    font-size: 15px;
+  }
+  .pravega-flex{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+  }
+  .pravega-img{
+    text-align: center;
+  }
+
+  .iisc-flex{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column-reverse;
+  }
+  .about-iisc{
+    align-items: center;
+    height: auto;
+  }
+  .iisc-title{
+    font-size: 25px;
+  }
+  .iisc-desc{
+    font-size: 15px;
+  }
+  .iisc-img{
+    text-align: center;
+  }
+}
 </style>

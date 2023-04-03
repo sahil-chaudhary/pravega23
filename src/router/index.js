@@ -9,7 +9,11 @@ import Merchandise from "../components/Merchandise.vue"
 import Sponsors from "../components/Sponsors.vue"
 import Contact from "../components/Contact.vue"
 import Carvaan_registrations from "../components/carvaan/carvaan_register.vue"
+import Register from "../components/carvaan/Register.vue"
+import Cities from "../components/carvaan/Cities.vue"
 /*import Delhi from "../components/carvaan/Delhi.vue"
+
+
 import Mumbai from "../components/carvaan/Mumbai.vue"
 import Ahmedabad from "../components/carvaan/Ahmedabad.vue"
 import Kochi from "../components/carvaan/Kochi.vue"
@@ -17,11 +21,11 @@ import Bhubaneswar from "../components/carvaan/Bhubaneswar.vue"
 import Bengaluru from "../components/carvaan/Bengaluru.vue"
 import Chennai from "../components/carvaan/Chennai.vue"
 import Hyderabad from "../components/carvaan/Hyderabad.vue"
-<<<<<<< HEAD
+
 import Kolkata from "../components/carvaan/Kolkata.vue"
-import Register from "../components/carvaan/Register.vue"
-import Cities from "../components/carvaan/Cities.vue"
-=======
+
+
+
 import Kolkata from "../components/carvaan/Kolkata.vue"*/
 
 
@@ -35,6 +39,8 @@ const routes = [
 	{path: "/sponsors", name:"Sponsors", component: Sponsors},
 	{path: "/contact", name: "Contact", component: Contact},
 	{path:"/carvaan/carvaan_register",name:"Carvaan Registrations",component: Carvaan_registrations},
+	{path: "/carvaan/cities", name:"Cities",component:Cities},
+	{path: "/carvaan/register", name:"Register",component:Register}
 	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},
 	{path:"/carvaan/ahmedabad",name:"Ahmedabad",component:Ahmedabad},
 	{path:"/carvaan/kochi",name:"Kochi",component:Kochi},
@@ -43,8 +49,8 @@ const routes = [
 	{path:"/carvaan/chennai",name:"Chennai",component:Chennai},
 	{path:"/carvaan/hyderabad",name:"Hyderabad",component:Hyderabad},
 	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata},
-	{path: "/carvaan/cities", name:"Cities",component:Cities},
-	{path: "/carvaan/register", name:"Register",component:Register}
+	
+	
 	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata}*/
 ]
 

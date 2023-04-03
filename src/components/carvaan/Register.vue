@@ -31,6 +31,9 @@ export default{
 	height: 90vh;
 }
 .content{
+	position: relative;
+	top: 10vh;
+	height: 90vh;
 	background-color: #eeeeee;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
