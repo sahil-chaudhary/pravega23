@@ -250,6 +250,7 @@
       font-size: small;
       width: 50px;
       position: absolute;
+      top: 10px;
       height: 50px;
       background-color: transparent;
       right: 10px;
@@ -315,8 +316,10 @@
   @media screen and (max-width: 1024px){
     .left-pravega img{
       position: relative;
+      top: 15px;
       width: 40px;
     }
+
     #navbar{
       display: none;
     }

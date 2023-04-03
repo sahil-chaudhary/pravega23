@@ -32,14 +32,12 @@ export default{
 			</div>
 
 			<div class = "links">
-
 				<router-link to="/carvaan/register">
 					<Card2 
-					href = "https://google.com"
-					dataImage="/img/carvaan/mumbai2.jpg"
+					dataImage="/img/carvaan/bengaluru.jpg"
 					size = "300px"
-					title = "MUMBAI"
-					hover = "20-21 May"/>
+					title = "BANGALORE"
+					hover = "20-21 May" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
@@ -47,7 +45,7 @@ export default{
 					dataImage="/img/carvaan/ahmedabad2.jpg"
 					size = "300px"
 					title = "AHMEDABAD"
-					hover = "27-28 May" />
+					hover = "3-4 June" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
@@ -57,7 +55,6 @@ export default{
 					title = "DELHI"
 					hover = "10-11 June"/>
 				</router-link>
-				
 
 				<router-link to="/carvaan/register">
 					<Card2 
@@ -74,7 +71,18 @@ export default{
 					title = "BHUBANESHWAR"
 					hover = "24-25 June" />
 				</router-link>
+
+
 				
+
+				<router-link to="/carvaan/register">
+					<Card2 
+					dataImage="/img/carvaan/indore.jpg"
+					size = "300px"
+					title = "INDORE"
+					hover = "1-2 July" />
+				</router-link>
+
 				<router-link to="/carvaan/register">
 					<Card2 
 					dataImage="/img/carvaan/hyderabad2.jpg"
@@ -82,30 +90,37 @@ export default{
 					title = "HYDERABAD"
 					hover = "8-9 July" />
 				</router-link>
-
-				<router-link to="/carvaan/register">
-					<Card2 
-					dataImage="/img/carvaan/indore.jpg"
-					size = "300px"
-					title = "INDORE"
-					hover = "15-16 July" />
-				</router-link>
-
+				
 				<router-link to="/carvaan/register">
 					<Card2 
 					dataImage="/img/carvaan/chennai2.jpg"
 					size = "300px"
 					title = "CHENNAI"
-					hover = "22-23 July" />
+					hover = "15-16 July" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/bengaluru.jpg"
+					href = "https://google.com"
+					dataImage="/img/carvaan/mumbai2.jpg"
 					size = "300px"
-					title = "BANGALORE"
-					hover = "19-20 August" />
+					title = "MUMBAI"
+					hover = "19-20 August"/>
 				</router-link>
+
+			
+				
+
+			
+				
+				
+				
+
+				
+
+				
+
+			
 			</div>
 		</div>	
 	</div>
@@ -114,7 +129,7 @@ export default{
 <style scoped>
 
 .description{
-	padding: 16px;
+	padding: 35px;
 	color: black;
 	font-size: large;
 	font-family: 'Roboto', sans-serif;

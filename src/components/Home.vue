@@ -89,6 +89,11 @@ export default{
     @keyframes move {
 	to { transform: translateY(calc(4vw - 100%)) }
 }
+
+@keyframes move2 {
+	to { transform: translateX(calc(4vw - 100%)) }
+}
+
     .hollow-rectangle{
       position: absolute;
       z-index: 1;
@@ -97,7 +102,7 @@ export default{
       
       height: 15vw;
       width: 10vw;
-      border: 0.1vw solid #555;
+      border: 0.5vw solid #10e685;
     }
     .rectangle{
       position: absolute;
@@ -106,7 +111,7 @@ export default{
       height: 2.5vw;
       width: 2.5vw;
       transform: translateY(calc(-1*(4vw - 100%)));
-      background-color: #555;
+      background-color: #dc2eaa;
       animation: move 2s ease-in-out infinite alternate;
 }
     
@@ -117,7 +122,7 @@ export default{
       height: 2.5vw;
       width: 2.5vw;
       transform: translateY(calc(-1*(4vw - 100%)));
-      border: 2px solid #555;
+      border: 2px solid #086fbe;
       border-radius: 50%;
       animation: move 2s ease-in-out infinite alternate;
     }
@@ -128,10 +133,10 @@ export default{
       left: 10%;
   height: 2.5vw;
   width: 2.5vw;
-  background-color: #555;
+  background-color: #bbd414;
   border-radius: 50%;
-  transform: translateY(calc(-1*(4vw - 100%)));
-  animation: move 2s ease-in-out infinite alternate;
+  transform: translateX(calc(-1*(4vw - 100%)));
+  animation: move2 2s ease-in-out infinite alternate;
 }
 
 
@@ -301,9 +306,11 @@ export default{
       font-size: 3vw;
     }
     .hollow-rectangle{
+      display: none;
       height: 45vw;
       width: 35vw;
-      top: 15%;
+      top: 30%;
+      border: 0.5vw solid #10e685;
     }
     .hollow-circle{
       left:80%;

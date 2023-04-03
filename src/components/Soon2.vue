@@ -5,14 +5,14 @@
 <template>
 
 <div class = "grad">
-	COMING SOON. STAY TUNED
+	MORE COMING SOON. STAY TUNED
 </div>
 
 </template>
 
 <style scoped>
 	.grad{
-		text-align: center;
+    text-align: center;
 	font-size: 72px;
   	background: -webkit-linear-gradient(45deg, #4cc9f0, #fff12d);
   	-webkit-background-clip: text;
