@@ -119,7 +119,6 @@ body{
       background-size: 130%;
       background-position: center;
       filter: brightness(0.3);
-
 }
 .description{
 	padding: 16px;
@@ -127,7 +126,6 @@ body{
 	font-size: large;
 	position: relative;
 	top: 1vw;
-	/*font-family: 'Roboto', sans-serif;*/
 }
 
 	
@@ -140,13 +138,10 @@ body{
 }
 .content{
 	background-color: #eeeeee;
-	position: relative;
 	height: auto;
-	top: 72px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 	overflow-y: scroll;
-	
 	color: #eeeeee;
 }
 
