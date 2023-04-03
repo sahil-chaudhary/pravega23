@@ -33,7 +33,6 @@ export default{
 </template>
 
 <style scoped>
-<<<<<<< HEAD
 .landing{
       position: absolute;
       top: 0;
@@ -50,36 +49,7 @@ export default{
 	width: fit-content;
 	left: 10vw;
 	z-index: 10;
-=======
-body{
-	background-image: url("/img/home/landing.PNG");
-      background-size: 130%;
-      background-position: center;
-      filter: brightness(0.3);
-}
-.description{
-	padding: 16px;
-	color: black;
-	font-size: large;
-	position: relative;
-	top: 1vw;
-}
-
-	
-
-	
-.title-flex{
-	display: flex;
-	height: 100vh;
-	width: 100vw;
-}
-.content{
-	background-color: #eeeeee;
-	height: auto;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	overflow-y: scroll;
->>>>>>> d2f1b0fafa81bc69015fb0617f8ebc635d2361dd
+	text-align: justify;
 	color: #eeeeee;
 	position: relative;
 	top: 25vh;

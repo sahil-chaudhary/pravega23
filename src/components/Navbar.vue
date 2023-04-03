@@ -314,7 +314,7 @@
 
   @media screen and (max-width: 1024px){
     .left-pravega img{
-      padding-top: 10px;
+      position: relative;
       width: 40px;
     }
     #navbar{

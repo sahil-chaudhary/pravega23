@@ -28,8 +28,6 @@ import Kolkata from "../components/carvaan/Kolkata.vue"
 
 import Kolkata from "../components/carvaan/Kolkata.vue"*/
 
-=======
->>>>>>> d2f1b0fafa81bc69015fb0617f8ebc635d2361dd
 
 const routes = [
 	{path: "/", name: "Home", component: Home},
