@@ -7,7 +7,7 @@ export default{
 </script>
 <template>
 	<div :class = "`title-flex`">
-		<Title text = "CONTACT US" color = "#4cc9f0"/>
+		<Title text = "CONTACT" color = "#4cc9f0"/>
 		<div :class = "`content`">
 			<Soon />
 		</div>
@@ -22,5 +22,8 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
+	top: 10vh;
+	height: 90vh;
+	position: relative;
 }
 </style>

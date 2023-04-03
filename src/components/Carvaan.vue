@@ -13,159 +13,79 @@ export default{
 
 </script>
 <template>
-	<div :class = "`title-flex`">
-		<Title text = "CARVAAN" color = "#4cc9f0"/>
+	<div class = "landing">
+	</div>
+	<div class = "landing-content">
+		<div class = "carvaan-title">
+			CARVAAN
+		</div>
 
-		<div :class = "`content`">
-			<div :class = "`description`">
-				Carvaan is a debut project by Pravega aimed at increasing outreach for our cultural events. As a part of Carvaan, Pravega will travel to some of India’s biggest cities- opening new doors of opportunities for thousands of students. Offline prelims will be conducted for our flagship battles in Singing, Dancing, Painting, and more. Selected participants from all over India will then collect at our campus in Bengaluru for a thrilling final. 
-				<br><br>
+		<div class = "desc">
+			Carvaan is a debut project by Pravega aimed at increasing outreach for our cultural events. As a part of Carvaan, Pravega will travel to some of India’s biggest cities- opening new doors of opportunities for thousands of students.
+		</div>
 
-				Our four main events under CARVAAN are:
-				<ul>
-					<li>Proscenium and Footprints: The stage and street play event of Pravega</li>
-					<li>Battle of Bands: No introduction needed of course! </li>
-					<li>Lasya: The dance event of pravega</li>
-					<li>Elegante: The fashion event of pravega</li>
-					<li>Crescendo: The music event for pravega</li>
-				</ul>	
-				<br>
-			To learn in detail about all the events, click <a :href="`src/assets/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
-			</div>
-
-			<div class = "links">
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					href = "https://google.com"
-					dataImage="/img/carvaan/mumbai2.jpg"
-					size = "300px"
-					title = "MUMBAI"
-					hover = "20-21 May" />
-				</router-link>
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/ahmedabad2.jpg"
-					size = "300px"
-					title = "AHMEDABAD"
-					hover = "27-28 May" />
-				</router-link>
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/delhi2.jpg"
-					size = "300px"
-					title = "DELHI"
-					hover = "10-11 June"/>
-				</router-link>
-				
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/kolkata2.jpg"
-					size = "300px"
-					title = "KOLKATA"
-					hover = "17-18 June" />
-				</router-link>
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/bhubaneswar2.jpg"
-					size = "300px"
-					title = "BHUBANESHWAR"
-					hover = "24-25 June" />
-				</router-link>
-				
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/hyderabad2.jpg"
-					size = "300px"
-					title = "HYDERABAD"
-					hover = "8-9 July" />
-				</router-link>
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/indore.jpg"
-					size = "300px"
-					title = "INDORE"
-					hover = "15-16 July" />
-				</router-link>
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/chennai2.jpg"
-					size = "300px"
-					title = "CHENNAI"
-					hover = "22-23 July" />
-				</router-link>
-
-				<router-link to="/carvaan/carvaan_register">
-					<Card2 
-					dataImage="/img/carvaan/bengaluru.jpg"
-					size = "300px"
-					title = "BANGALORE"
-					hover = "19-20 August" />
-				</router-link>
-			</div>
-		</div>	
+		<div class = "learn">
+			<router-link to="/carvaan/cities" :style="`text-decoration: none; color: inherit;`">
+				LEARN MORE...
+			</router-link>
+		</div>
 	</div>
 </template>
 
 <style scoped>
-body{
-	background-image: url("/img/home/landing.PNG");
-      background-size: 130%;
-      background-position: center;
-      filter: brightness(0.3);
+.landing{
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      background-image: url("/img/carvaan/carvaanlanding.png");
+      background-position: 50% 80%;
+      background-size: cover;
+      filter: brightness(1);
+      overflow: hidden;
+    }
 
-}
-.description{
-	padding: 16px;
-	color: black;
-	font-size: large;
-	position: relative;
-	top: 1vw;
-	/*font-family: 'Roboto', sans-serif;*/
-}
-
-	
-
-	
-.title-flex{
-	display: flex;
-	height: 100vh;
-	width: 100vw;
-}
-.content{
-	background-color: #eeeeee;
-	position: relative;
-	height: auto;
-	top: 72px;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	overflow-y: scroll;
-	
+.landing-content{
+	width: fit-content;
+	left: 10vw;
+	z-index: 10;
+	text-align: justify;
 	color: #eeeeee;
-}
-
-.links{
 	position: relative;
-	top: 1vw;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	row-gap: 8px;
-	padding-top: 8px;
+	top: 25vh;
+}
+.carvaan-title{
+	font-weight: bold;
+	font-size: 50px;
+}
+.desc{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	width: 35vw;
+}
+.learn{
+	cursor: pointer;
+	font-weight: bold;
+	transition: font-size 1s;
 }
 
-@media screen and (max-width: 1024px) {
-	.description{
-		top: 2vw;
-	}
-	.links{
-		top: 2vw;
-	}
+.learn:hover{
+	font-size: 1.5em;
 }
+
+  @media screen and (max-width: 1024px) {
+  	.landing{
+  		background-position: 100% 100%;
+  	}
+  	.landing-content{
+  		text-align: center;
+  		top: 10vh;
+  		left: 8px;
+
+  	}
+  	.desc{
+  		width: 90vw;
+  	}
+
+  	}
 </style>

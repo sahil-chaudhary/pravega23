@@ -158,7 +158,7 @@
 <style scoped>
   	
   #navbar{
-      
+    
     position: fixed;
     top: 0px;
     height: 10vh;
@@ -167,7 +167,7 @@
     gap: 10vw;
     display:flex;
     align-items: center;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0);
     color: #eeeeee;
     padding-left: 5vw;
     z-index: 20;
@@ -299,7 +299,7 @@
     letter-spacing: 2px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-image: linear-gradient(to bottom, #3a0ca3, #21075c);
+    background-color: #000000;
   }
 
   .dropdown div{
@@ -314,6 +314,7 @@
 
   @media screen and (max-width: 1024px){
     .left-pravega img{
+      position: relative;
       width: 40px;
     }
     #navbar{
@@ -328,7 +329,6 @@
       box-sizing: border-box;
       gap: 20vw;
       display:flex;
-      align-items: center;
       background-color: #000000;
       color: #eeeeee;
       padding-left: 5vw;
@@ -337,6 +337,10 @@
     }
     .dropdown{
       font-size: 25px;
+    }
+    .dropdown div{
+      position: relative;
+      right: 0;
     }
   }
 </style>

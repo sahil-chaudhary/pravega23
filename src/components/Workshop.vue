@@ -22,5 +22,8 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
+	top: 10vh;
+	height: 90vh;
+	position: relative;
 }
 </style>

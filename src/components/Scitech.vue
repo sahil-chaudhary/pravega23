@@ -31,8 +31,8 @@ export default{
 .content{
 	background-color: #eeeeee;
 	height: 90vh;
-	position: relative;
 	top: 10vh;
+	position: relative;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 	overflow-y: scroll;

@@ -19,7 +19,6 @@ export default{
 </template>
 
 <style scoped>
-
 @keyframes appear100{
 	0%{
 		opacity: 0;
@@ -30,7 +29,6 @@ export default{
 		top: 70%;
 	}
 }
-
 @keyframes appear33{
 	0%{
 		left: 25vw;
@@ -46,7 +44,6 @@ export default{
 		left: 23vw;
 	}
 }
-
 @keyframes slideInFromBottom{
 	0%{
 		top: 90%;
@@ -64,12 +61,14 @@ export default{
 	}
 }
 .title{
+	position: relative;
+	top: 10vh;
+	height: 90vh;
 	--theme-color: v-bind("color");
+	background-image: linear-gradient(to top, var(--theme-color) -10%, #000000 60%);
 	background-image: linear-gradient(to top, var(--theme-color) -10%, #000000 50%);
 	width: 25vw;
 	color: var(--theme-color);
-	position: relative;
-	height: 795px;
 }
 .text{
 	position: absolute;
@@ -85,9 +84,7 @@ export default{
 }
 .transluscent{
 	left: 23vw;
-
 	animation: 0.8s ease-out 0s 1 appear33;
 	opacity:  0.33;
 }
-
 </style>
