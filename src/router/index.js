@@ -28,6 +28,8 @@ import Kolkata from "../components/carvaan/Kolkata.vue"
 
 import Kolkata from "../components/carvaan/Kolkata.vue"*/
 
+=======
+>>>>>>> d2f1b0fafa81bc69015fb0617f8ebc635d2361dd
 
 const routes = [
 	{path: "/", name: "Home", component: Home},
@@ -38,7 +40,6 @@ const routes = [
 	{path: "/merch", name:"Merchandise", component: Merchandise},
 	{path: "/sponsors", name:"Sponsors", component: Sponsors},
 	{path: "/contact", name: "Contact", component: Contact},
-	{path:"/carvaan/carvaan_register",name:"Carvaan Registrations",component: Carvaan_registrations},
 	{path: "/carvaan/cities", name:"Cities",component:Cities},
 	{path: "/carvaan/register", name:"Register",component:Register}
 	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},

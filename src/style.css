@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 *{
+<<<<<<< HEAD
     margin: 0px;
     font-family: 'Source Sans Pro', Calibri;
+=======
+    margin: 0 0;
+    font-family: 'Alkatra', cursive;
+>>>>>>> d2f1b0fafa81bc69015fb0617f8ebc635d2361dd
 }
 
 html{
     background-color: #000000;
-}
-
-body{
-    height: auto;
 }
 
 .content{
