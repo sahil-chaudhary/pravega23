@@ -10,6 +10,15 @@
         this.navOpen = false;
 
         console.log("navOpen value: " + this.navOpen)
+      },
+      changecolor(){
+        if(window.scrollY > 0){
+          document.getElementById("navbar").style.backgroundColor = "white";
+        }
+        else{
+          document.getElementById("navbar").style.backgroundColor = "transparent";
+        }
+
       }
     },
     watch: {
@@ -30,7 +39,7 @@
 </script>
 
 <template>
-  <nav :id="`navbar`">
+  <nav :id="`navbar`" @load = "changecolor">
     <div :class="`left-pravega`">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
       	<img src = "/img/logo/x.png" />
@@ -39,7 +48,7 @@
 
     <div :class="`right-nav`">
 
-      <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
+      <router-link :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
       <div :class="`workshop-button`">
           CARVAAN
       </div>
@@ -100,7 +109,7 @@
     </button>
 
     <div class="dropdown" ref = "dropdown">
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/carvaan">
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
         <div>
           CARVAAN
         </div>
@@ -150,7 +159,7 @@
   	
   #navbar{
       
-    position: sticky;
+    position: fixed;
     top: 0px;
     height: 10vh;
     width: 100vw;
@@ -158,10 +167,10 @@
     gap: 10vw;
     display:flex;
     align-items: center;
-    background-color: rgba(0,0,0,0);
+    background-color: #000000;
     color: #eeeeee;
     padding-left: 5vw;
-    z-index: 2;
+    z-index: 20;
 
   }
   .left-pravega{
@@ -176,6 +185,7 @@
     gap: 1vw;
     justify-content: space-evenly;
     align-items: center;
+    
   }
   .right-nav div{
     padding: 1vw;
@@ -185,10 +195,12 @@
     background-size: 200% 200%;
     background-position: 50% 0%;
     border-radius: 18px;
+    z-index: 20;
   }
   .right-nav div:hover{
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);;
     background-position: 50% 60%;
+    z-index: 20;
   }
 
   .scitech-button{
@@ -235,12 +247,14 @@
 
 
     .burger{
+      font-size: small;
       width: 50px;
       position: absolute;
       height: 50px;
       background-color: transparent;
       right: 10px;
       border-radius: 8px;
+      margin-right: 5vw;
     }
    .burger span {
       display: block;
@@ -273,6 +287,7 @@
     }
 
   .dropdown{
+    font-size: small;
     position: absolute;
     max-height: 0vh;
     overflow: hidden;
@@ -293,33 +308,35 @@
     width: max-content;
     left: 50vw;
     transform: translateX(-50%);
-    font-size: 50px;
+    font-size: 25px;
     cursor: pointer;
   }
 
   @media screen and (max-width: 1024px){
     .left-pravega img{
-      width: 60px;
+      width: 40px;
     }
     #navbar{
       display: none;
     }
     #mobile-nav{
-      position: sticky;
+      position: fixed;
       top: 0px;
+      margin-top: 0px;
       height: 10vh;
       width: 100vw;
       box-sizing: border-box;
       gap: 20vw;
       display:flex;
       align-items: center;
-      background-color: #3a0ca3;
+      background-color: #000000;
       color: #eeeeee;
       padding-left: 5vw;
-      z-index: 2;
+      padding-right: 5vw;
+      z-index: 20;
     }
-    .burger{
-      font-size: 50px;
+    .dropdown{
+      font-size: 25px;
     }
   }
 </style>

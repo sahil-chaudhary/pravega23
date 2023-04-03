@@ -22,7 +22,7 @@ export default{
 
 <template>
 <div :class = "`title-flex`">
-        <Title text = "DELHI" color = "#dd6e42"/>
+        <Title text = "REGISTER" color = "#dd6e42"/>
         <div :class = "`content`" id="form_page">
             <div data-tf-widget="rS1TgboY" data-tf-opacity="100" data-tf-iframe-props="title=Event Registration (copy)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;">
             </div>
@@ -31,17 +31,14 @@ export default{
 </template>
 
 <style scoped>
-.title-flex{
-    display: flex;
-    height: 90vh;
-}
-
 
 .content{
     background-color: #eeeeee;
     width: 75vw;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 0px;
     /*overflow-y: scroll;*/
 }
 
@@ -79,11 +76,15 @@ export default{
 
 .title-flex {
     display: flex;
-    height: 90vh;
+    height: 100vh;
 }
 
 .content {
     background-color: #eeeeee;
+    position: relative;
+    top: 74px;
+    border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 
 }
 
@@ -235,5 +236,11 @@ button:hover {
         width: calc(50% - 8px);
     }
 }
+@media screen and (max-width: 1024px) {
+    .content {
+        width: 100vw;
+    }
+}
+    
 
 </style>

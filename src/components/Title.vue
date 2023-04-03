@@ -68,6 +68,8 @@ export default{
 	background-image: linear-gradient(to top, var(--theme-color) -10%, #000000 50%);
 	width: 25vw;
 	color: var(--theme-color);
+	position: relative;
+	height: 795px;
 }
 .text{
 	position: absolute;
