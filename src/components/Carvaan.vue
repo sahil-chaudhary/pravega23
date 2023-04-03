@@ -21,7 +21,7 @@ export default{
 		</div>
 
 		<div class = "desc">
-			Carvaan is a debut project by Pravega aimed at increasing outreach for our cultural events. As a part of Carvaan, Pravega will travel to some of India’s biggest cities- opening new doors of opportunities for thousands of students.
+			Carvaan is a debut project by Pravega through which we bring our flagship cultural events to some of India’s biggest cities, where offline prelims will be conducted for our Singing, Dancing, Fashion events, and more. Selected participants from all over India will then arrive at our campus in Bengaluru for a thrilling final.
 		</div>
 
 		<div class = "learn">

@@ -21,14 +21,14 @@ export default{
 
 				Our five main events under CARVAAN are:
 				<ul>
-					<li>Proscenium and Footprints: The stage and street play event of Pravega</li>
-					<li>Battle of Bands: No introduction needed of course! </li>
-					<li>Lasya: The dance event of pravega</li>
-					<li>Elegante: The fashion event of pravega</li>
-					<li>Crescendo: The music event for pravega</li>
+					<li>Proscenium and Footprints: This theatre and street play event brings profound and engaging stories to vivid reality, leaving a mark on the viewers.</li>
+					<li>Battle of Bands: This intense showdown between bands features electrifying performances in different genres.</li>
+					<li>Lasya: A scintillating showcase of graceful dancing, this is a fiery battle of grace, finesse, and expressions. </li>
+					<li>Elegante’: This dazzling fashion show event showcases novel and unique ideas by upcoming designers brought to life by skilled models.</li>
+					<li>Crescendo: An exhilarating musical battle of vocalists and instrumentalists featuring a captivating medley of melodies.</li>
 				</ul>	
 				<br>
-			To learn in detail about all the events, click <a :href="`src/assets/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
+			To learn in detail about all the events, click <a :href="`/pdf/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
 			</div>
 
 			<div class = "links">
