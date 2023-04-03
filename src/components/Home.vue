@@ -56,18 +56,18 @@ export default{
       position: absolute;
       z-index: 1;
       top: 15%;
-      left: 30%;
+      left: 33%;
       
-      height: 300px;
-      width: 200px;
-      border: 2px solid #555;
+      height: 15vw;
+      width: 10vw;
+      border: 0.1vw solid #555;
     }
     .rectangle{
       position: absolute;
       top: 15%;
       left: 10%;
-      height: 50px;
-      width: 50px;
+      height: 2.5vw;
+      width: 2.5vw;
       transform: translateY(calc(-1*(5vw - 100%)));
       background-color: #555;
       animation: move 2s ease-in-out infinite alternate;
@@ -77,8 +77,8 @@ export default{
       position: absolute;
       top: 15%;
       left: 90%;
-      height: 50px;
-      width: 50px;
+      height: 2.5vw;
+      width: 2.5vw;
       transform: translateY(calc(-1*(5vw - 100%)));
       border: 2px solid #555;
       border-radius: 50%;
@@ -89,8 +89,8 @@ export default{
       position: absolute;
       top: 90%;
       left: 10%;
-  height: 50px;
-  width: 50px;
+  height: 2.5vw;
+  width: 2.5vw;
   background-color: #555;
   border-radius: 50%;
   transform: translateY(calc(-1*(5vw - 100%)));
@@ -114,24 +114,59 @@ export default{
     color: white;
     padding-top: 10vh;
     opacity: 1;
-    height: 100px;
+    height:5vw;
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
   }
   .logo img{
     opacity: 1;
-    height: 75px;
+    height: 3.75vw;
     width: auto;
     
   }
+  @media screen and (max-width: 1024px) {
+    .logo img{
+      height: 10vw;
+    }
+    .location{
+      font-size: 3vw;
+    }
+    .hollow-rectangle{
+      height: 45vw;
+      width: 35vw;
+      top: 15%;
+    }
+    .hollow-circle{
+      left:80%;
+      height: 3vw;
+      width: 3vw;
+    }
+    .circle{
+      top: 50%;
+      height: 3vw;
+      width: 3vw;
+    }
+    .rectangle{
+      height: 3vw;
+      width: 3vw;
+    }
+    .landing-title{
+      height: 35vw;
+    }
+    .landing{
+      height: 72vw;
+    }
+  }
+    
+  
 
   .desc{
 
     width: fit-content;
     position: relative;
     z-index: 10;
-    padding-bottom: 15px;
+    padding-bottom: 0.75vw;
   }
   .grad{
         background-image: -webkit-linear-gradient(0deg, #f72585, #a92fde 100%);
@@ -144,7 +179,7 @@ export default{
     width: fit-content;
     position: relative;
     z-index: 10;
-    padding-top: 15px;
+    padding-top: 0.75vw;
   }
   .timer{
     position: relative;
@@ -163,27 +198,27 @@ export default{
  @keyframes appearPravega{
     0%{
       opacity: 0%;
-      right: 30px;
+      right: 1.5vw;
     }
     100%{
       opacity: 100%;
-      right: 0px;
+      right: 0vw;
     }
   }
 
   @keyframes appearX{
     0%{
       opacity: 0%;
-      right: 30px;
+      right: 1.5vw;
     }
     50%{
       opacity: 0%;
-      right: 30px;
+      right: 1.5vw;
 
     }
     100%{
       opacity: 1;
-      right: 0px;
+      right: 0vw;
     }
   }
 

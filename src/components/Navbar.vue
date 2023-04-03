@@ -39,7 +39,7 @@
 
     <div :class="`right-nav`">
 
-      <router-link :style = "`text-decoration: none; color: inherit; `" to="/carvaan">
+      <router-link :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
       <div :class="`workshop-button`">
           CARVAAN
       </div>
@@ -100,7 +100,7 @@
     </button>
 
     <div class="dropdown" ref = "dropdown">
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/carvaan">
+      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
         <div>
           CARVAAN
         </div>
@@ -176,6 +176,7 @@
     gap: 1vw;
     justify-content: space-evenly;
     align-items: center;
+    
   }
   .right-nav div{
     padding: 1vw;
@@ -185,10 +186,12 @@
     background-size: 200% 200%;
     background-position: 50% 0%;
     border-radius: 18px;
+    z-index: 20;
   }
   .right-nav div:hover{
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);;
     background-position: 50% 60%;
+    z-index: 20;
   }
 
   .scitech-button{
@@ -235,12 +238,14 @@
 
 
     .burger{
+      font-size: small;
       width: 50px;
       position: absolute;
       height: 50px;
       background-color: transparent;
       right: 10px;
       border-radius: 8px;
+      margin-right: 5vw;
     }
    .burger span {
       display: block;
@@ -273,6 +278,7 @@
     }
 
   .dropdown{
+    font-size: small;
     position: absolute;
     max-height: 0vh;
     overflow: hidden;
@@ -293,7 +299,7 @@
     width: max-content;
     left: 50vw;
     transform: translateX(-50%);
-    font-size: 50px;
+    font-size: 25px;
     cursor: pointer;
   }
 
@@ -306,20 +312,22 @@
     }
     #mobile-nav{
       position: sticky;
-      top: 0px;
+      top: 7px;
+      margin-top: 7px;
       height: 10vh;
       width: 100vw;
       box-sizing: border-box;
       gap: 20vw;
       display:flex;
       align-items: center;
-      background-color: #3a0ca3;
+      background-color: transparent;
       color: #eeeeee;
       padding-left: 5vw;
-      z-index: 2;
+      padding-right: 5vw;
+      z-index: 20;
     }
-    .burger{
-      font-size: 50px;
+    .dropdown{
+      font-size: 25px;
     }
   }
 </style>
