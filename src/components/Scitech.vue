@@ -30,8 +30,11 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
-	height: auto;
+	height: 98vh;
+	position: relative;
+	top: 90px;
 	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 	overflow-y: scroll;
 }
 .links{

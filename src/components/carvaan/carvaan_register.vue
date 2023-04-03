@@ -301,6 +301,10 @@ export default{
 
 .content {
     background-color: #eeeeee;
+    position: relative;
+    top: 74px;
+    border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 
 }
 
