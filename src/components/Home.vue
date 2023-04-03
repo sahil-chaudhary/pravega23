@@ -12,7 +12,7 @@ export default{
 
         <div class = "landing">
         </div>
-
+       
         <div class = "landing-title">
           <div class = "logo">
               <div class = "desc">
@@ -30,9 +30,9 @@ export default{
           <div class = "rectangle"></div>
           <div class = "hollow-rectangle"></div>
         </div>
-
         <div class = "about-pravega">
         </div>
+       
   </div>
 </template>
 
@@ -40,7 +40,7 @@ export default{
 
     .landing{
       position: absolute;
-      top: 0;
+      top: 10%;
       height: 100vh;
       width: 100vw;
       overflow: hidden;
@@ -50,7 +50,7 @@ export default{
       filter: brightness(0.3);
     }
     @keyframes move {
-	to { transform: translateY(calc(5vw - 100%)) }
+	to { transform: translateY(calc(4vw - 100%)) }
 }
     .hollow-rectangle{
       position: absolute;
@@ -68,7 +68,7 @@ export default{
       left: 10%;
       height: 2.5vw;
       width: 2.5vw;
-      transform: translateY(calc(-1*(5vw - 100%)));
+      transform: translateY(calc(-1*(4vw - 100%)));
       background-color: #555;
       animation: move 2s ease-in-out infinite alternate;
 }
@@ -79,7 +79,7 @@ export default{
       left: 90%;
       height: 2.5vw;
       width: 2.5vw;
-      transform: translateY(calc(-1*(5vw - 100%)));
+      transform: translateY(calc(-1*(4vw - 100%)));
       border: 2px solid #555;
       border-radius: 50%;
       animation: move 2s ease-in-out infinite alternate;
@@ -87,13 +87,13 @@ export default{
     
     .circle {
       position: absolute;
-      top: 90%;
+      top: 80%;
       left: 10%;
   height: 2.5vw;
   width: 2.5vw;
   background-color: #555;
   border-radius: 50%;
-  transform: translateY(calc(-1*(5vw - 100%)));
+  transform: translateY(calc(-1*(4vw - 100%)));
   animation: move 2s ease-in-out infinite alternate;
 }
 
@@ -117,7 +117,7 @@ export default{
     height:5vw;
     z-index: 2;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,50%);
   }
   .logo img{
     opacity: 1;
@@ -152,10 +152,10 @@ export default{
       width: 3vw;
     }
     .landing-title{
-      height: 35vw;
+      height: 80vw;
     }
     .landing{
-      height: 72vw;
+      height: 73vw;
     }
   }
     
@@ -224,6 +224,7 @@ export default{
 
 
   .about-pravega{
+    position:relative;
     background-color: #000000;
     height: 100vh;
   }

@@ -35,17 +35,16 @@ export default{
 
 			<div class = "links">
 
-				<router-link to="/carvaan/mumbai">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					href = "https://google.com"
 					dataImage="/img/carvaan/mumbai2.jpg"
 					size = "300px"
 					title = "MUMBAI"
-					hover = "20-21 May"
-					v-bind:href="`/carvaan/mumbai`" />
+					hover = "20-21 May" />
 				</router-link>
 
-				<router-link to="/carvaan/ahmedabad">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/ahmedabad2.jpg"
 					size = "300px"
@@ -53,7 +52,7 @@ export default{
 					hover = "27-28 May" />
 				</router-link>
 
-				<router-link to="/carvaan/delhi">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/delhi2.jpg"
 					size = "300px"
@@ -62,7 +61,7 @@ export default{
 				</router-link>
 				
 
-				<router-link to="/carvaan/kolkata">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/kolkata2.jpg"
 					size = "300px"
@@ -70,7 +69,7 @@ export default{
 					hover = "17-18 June" />
 				</router-link>
 
-				<router-link to="/carvaan/bhubaneswar">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/bhubaneswar2.jpg"
 					size = "300px"
@@ -78,7 +77,7 @@ export default{
 					hover = "24-25 June" />
 				</router-link>
 				
-				<router-link to="/carvaan/hyderabad">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/hyderabad2.jpg"
 					size = "300px"
@@ -86,7 +85,7 @@ export default{
 					hover = "8-9 July" />
 				</router-link>
 
-				<router-link to="/carvaan/kochi">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/indore.jpg"
 					size = "300px"
@@ -94,7 +93,7 @@ export default{
 					hover = "15-16 July" />
 				</router-link>
 
-				<router-link to="/carvaan/chennai">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/chennai2.jpg"
 					size = "300px"
@@ -102,7 +101,7 @@ export default{
 					hover = "22-23 July" />
 				</router-link>
 
-				<router-link to="/carvaan/bengaluru">
+				<router-link to="/carvaan/carvaan_register">
 					<Card2 
 					dataImage="/img/carvaan/bengaluru.jpg"
 					size = "300px"
@@ -126,28 +125,47 @@ body{
 	padding: 16px;
 	color: black;
 	font-size: large;
+	position: relative;
+	top: 1vw;
 	/*font-family: 'Roboto', sans-serif;*/
 }
+
+	
+
 	
 .title-flex{
 	display: flex;
-	height: 90vh;
+	height: 100vh;
 	width: 100vw;
 }
 .content{
 	background-color: #eeeeee;
+	position: relative;
 	height: auto;
+	top: 72px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 	overflow-y: scroll;
+	
 	color: #eeeeee;
 }
 
 .links{
+	position: relative;
+	top: 1vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	row-gap: 8px;
 	padding-top: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+	.description{
+		top: 2vw;
+	}
+	.links{
+		top: 2vw;
+	}
 }
 </style>

@@ -10,6 +10,15 @@
         this.navOpen = false;
 
         console.log("navOpen value: " + this.navOpen)
+      },
+      changecolor(){
+        if(window.scrollY > 0){
+          document.getElementById("navbar").style.backgroundColor = "white";
+        }
+        else{
+          document.getElementById("navbar").style.backgroundColor = "transparent";
+        }
+
       }
     },
     watch: {
@@ -30,7 +39,7 @@
 </script>
 
 <template>
-  <nav :id="`navbar`">
+  <nav :id="`navbar`" @load = "changecolor">
     <div :class="`left-pravega`">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
       	<img src = "/img/logo/x.png" />
@@ -150,7 +159,7 @@
   	
   #navbar{
       
-    position: sticky;
+    position: fixed;
     top: 0px;
     height: 10vh;
     width: 100vw;
@@ -158,17 +167,17 @@
     gap: 10vw;
     display:flex;
     align-items: center;
-    background-color: rgba(0,0,0,0);
+    background-color: #000000;
     color: #eeeeee;
     padding-left: 5vw;
-    z-index: 2;
+    z-index: 20;
 
   }
   .left-pravega{
   	cursor: pointer;
   }
   .left-pravega img{
-    width: 60px;
+    width: 40px;
   }
   .right-nav{
   	font-size: 1.2em;
@@ -305,22 +314,22 @@
 
   @media screen and (max-width: 1024px){
     .left-pravega img{
-      width: 60px;
+      width: 40px;
     }
     #navbar{
       display: none;
     }
     #mobile-nav{
-      position: sticky;
-      top: 7px;
-      margin-top: 7px;
+      position: fixed;
+      top: 0px;
+      margin-top: 0px;
       height: 10vh;
       width: 100vw;
       box-sizing: border-box;
       gap: 20vw;
       display:flex;
       align-items: center;
-      background-color: transparent;
+      background-color: #000000;
       color: #eeeeee;
       padding-left: 5vw;
       padding-right: 5vw;
