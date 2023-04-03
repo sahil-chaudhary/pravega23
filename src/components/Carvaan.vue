@@ -18,33 +18,15 @@ export default{
 </template>
 
 <style scoped>
-
-.description{
-	padding: 16px;
-	color: black;
-	font-size: large;
-	/*font-family: 'Roboto', sans-serif;*/
-}
-	
-.title-flex{
-	display: flex;
-	height: 90vh;
-	width: 100vw;
-}
-.content{
-	background-color: #eeeeee;
-	height: auto;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	overflow-y: scroll;
-	color: #eeeeee;
-}
-
-.links{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	row-gap: 8px;
-	padding-top: 8px;
-}
+.landing{
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      background-image: url("/img/carvaan/carvaanlanding.png");
+      background-position: 50% 80%;
+      background-size: cover;
+      filter: brightness(1);
+      overflow: visible;
+    }
 </style>
