@@ -22,8 +22,11 @@ export default{
 }
 .content{
 	background-color: #eeeeee;
-	top: 10vh;
 	height: 90vh;
 	position: relative;
+	top: 10vh;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	overflow-y: scroll;
 }
 </style>

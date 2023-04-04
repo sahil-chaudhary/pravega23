@@ -12,6 +12,7 @@
 
 <style scoped>
 	.grad{
+		text-align: center;
 	font-size: 72px;
   	background: -webkit-linear-gradient(45deg, #4cc9f0, #fff12d);
   	-webkit-background-clip: text;

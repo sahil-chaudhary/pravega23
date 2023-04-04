@@ -12,7 +12,7 @@ export default{
 			
 			<div class = "big-text">
 				OUR PREVIOUS <span class = "grad">SPONSORS</span>
-			</div>
+			</div><br>
 			<div class = "links">
 				<a href = "https://www.airbus.com/"><img src = "/img/sponsors/airbus2.png" class = "wide"></a>
 
@@ -52,7 +52,7 @@ export default{
 	font-weight: bold;
 	font-size: 50px;
 	text-align: center;
-	padding-left: 10px;
+	padding: 10px;
 }
 .grad{
   	background: -webkit-linear-gradient(45deg, #dd6e42, #3a0ca6);

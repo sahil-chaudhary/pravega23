@@ -324,6 +324,7 @@
       display: flex;
       align-items: center;
     }
+
     #navbar{
       display: none;
     }
