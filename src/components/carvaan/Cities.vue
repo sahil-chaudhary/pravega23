@@ -19,17 +19,17 @@ export default{
 		<div :class = "`content`">
 			<div :class = "`description`">
 
-				Our five main events under CARVAAN are:
+				<!--Our five main events under CARVAAN are:
 				<ul>
 					<li>Proscenium and Footprints: This theatre and street play event brings profound and engaging stories to vivid reality, leaving a mark on the viewers.</li>
 					<li>Battle of Bands: This intense showdown between bands features electrifying performances in different genres.</li>
 					<li>Lasya: A scintillating showcase of graceful dancing, this is a fiery battle of grace, finesse, and expressions. </li>
 					<li>Elegante’: This dazzling fashion show event showcases novel and unique ideas by upcoming designers brought to life by skilled models.</li>
 					<li>Crescendo: An exhilarating musical battle of vocalists and instrumentalists featuring a captivating medley of melodies.</li>
-				</ul>	
+				</ul>
 				<br>
 			To learn in detail about all the events, click <a :href="`/pdf/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
-			</div>
+			</div>-->
 
 			<div class = "links">
 				<router-link to="/carvaan/register">
@@ -108,6 +108,10 @@ export default{
 					hover = "19-20 August"/>
 				</router-link>
 
+				<div :class = "`description`">
+					To learn in detail about all the events, click <a :href="`/pdf/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
+				</div>
+
 			
 				
 
@@ -124,6 +128,7 @@ export default{
 			</div>
 		</div>	
 	</div>
+</div>	
 </template>
 
 <style scoped>
@@ -157,6 +162,6 @@ export default{
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	row-gap: 8px;
-	padding-top: 8px;
+	padding: 16px;
 }
 </style>

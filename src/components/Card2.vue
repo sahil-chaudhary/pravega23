@@ -114,6 +114,14 @@ export default{
 	height: var(--c-size);
 	cursor: pointer;
 }
+.card-title{
+	font-weight: 700;
+}
+
+.card-bg{
+ 	filter: blur(0px);
+	-webkit-filter: blur(0px);
+}
 
 
 

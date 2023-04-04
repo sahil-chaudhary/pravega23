@@ -1,8 +1,9 @@
 <script>
 import Title from './Title.vue'
 import Soon2 from './Soon2.vue'
+import Card2 from "./Card2.vue"
 export default{
-	components:{Title, Soon2}
+	components:{Title, Soon2, Card2}
 }
 </script>
 <template>
@@ -12,15 +13,41 @@ export default{
 			<div class = "description">
 				Some people whom you can contact incase of any queries:
 				<br>
-				<ul>
-					<li>Tanisha Kumar: +91 9890725310 , <a href="tanishakumar@iisc.ac.in">tanishakumar@iisc.ac.in</a></li>
-					<li>Deepti Sahu: +91 6370632574, <a href="deeptisahu@iisc.ac.in">deeptisahu@iisc.ac.in</a></li>
-				</ul>	
-			</div>
+				<div class ="flex">
+				<div class = "contact">
+					<Card2 
+					dataImage="/img/people/tanisha.jpg"
+					size = "300px"
+					title = "Tanisha"
+					hover = "" />
+					<br>
+					<div class = "contact-name">
+						9890725310
+					</div>
+					<div class = "contact-email">
+						<a href="mailto: tanishakumar@iisc.ac.in">tanishakumar@iisc.ac.in</a>
+					</div>
+				</div>	
+				<div class = "contact">
+					<Card2 
+					dataImage="/img/people/deepti.jpg"
+					size = "300px"
+					title = "Deepti"
+					hover = "" />
+					<br>
+					<div class = "contact-name">
+						6370632574
+					</div>
+					<div class = "contact-email">
+						<a href="mailto: deeptisahu@iisc.ac.in">deeptisahu@iisc.ac.in</a>
+					</div>
+				</div>
+				</div>
 
 			<Soon2 />
 		</div>
 	</div>
+</div>
 </template>
 
 <style scoped>
@@ -28,6 +55,20 @@ export default{
 .title-flex{
 	display: flex;
 	height: 90vh;
+}
+.flex{
+	padding-top: 2vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 2vw;
+	align-items: center;
+	display: flex;
+	gap: 10vw;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .description{
@@ -45,4 +86,15 @@ export default{
 	border-top-right-radius: 25px;
 	overflow-y: scroll;
 }
+
+@media screen and (max-width: 1024px) {
+	.flex{
+		flex-direction: column;
+	}
+	.contact{
+		padding-bottom: 10vw;
+	}
+}
+	
+
 </style>

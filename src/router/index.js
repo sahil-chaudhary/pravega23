@@ -40,6 +40,7 @@ const routes = [
 	{path: "/contact", name: "Contact", component: Contact},
 	{path: "/carvaan/cities", name:"Cities",component:Cities},
 	{path: "/carvaan/register", name:"Register",component:Register}
+	
 	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},
 	{path:"/carvaan/ahmedabad",name:"Ahmedabad",component:Ahmedabad},
 	{path:"/carvaan/kochi",name:"Kochi",component:Kochi},
