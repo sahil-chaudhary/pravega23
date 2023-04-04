@@ -145,7 +145,7 @@ export default{
 
 
     .landing-title{
-      height: 90vh;
+      height: 100vh;
       background-color: rgba(0,0,0,0);
       overflow: visible;
     }

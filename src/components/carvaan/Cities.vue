@@ -109,21 +109,12 @@ export default{
 				</router-link>
 
 				<div :class = "`description`">
-					To learn in detail about all the events, click <a :href="`/pdf/CARVAAN.pdf`">here</a>. Below are the listed cities and dates for CARVAAN 2023. Hope to see you all during the prelims!
+					To learn in detail about all the events, click 
+					<a :style = "`color: inherit;`" 
+					class = "grad underline"
+					:href="`/pdf/CARVAAN.pdf`" >here</a>. 
+					Above are the listed cities and dates for <span class = "grad">CARVAAN 2023</span>. Hope to see you all during the prelims!
 				</div>
-
-			
-				
-
-			
-				
-				
-				
-
-				
-
-				
-
 			
 			</div>
 		</div>	
@@ -136,7 +127,7 @@ export default{
 .description{
 	padding: 35px;
 	color: black;
-	font-size: large;
+	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
 }
 	
@@ -164,4 +155,15 @@ export default{
 	row-gap: 8px;
 	padding: 16px;
 }
+
+	.grad{
+	  	font-weight: bold;
+      background-image: -webkit-linear-gradient(0deg, #f72585, #a92fde 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
+	.underline{
+		text-decoration: underline;
+		text-decoration-color: #a92fde;
+	}
 </style>
