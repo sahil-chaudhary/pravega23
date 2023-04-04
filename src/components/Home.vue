@@ -77,9 +77,10 @@ export default{
       top: 0;
       height: 100vh;
       width: 100vw;
-      background-image: url("/img/home/landing.PNG");
+      background-image: url("/img/home/landing.png");
       background-size: 130%;
       background-position: center;
+      background-color: #000000;
       filter: brightness(0.3);
       overflow: visible;
     }

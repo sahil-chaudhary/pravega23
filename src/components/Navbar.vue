@@ -96,7 +96,7 @@
   </nav>
 
   <nav :id="`mobile-nav`">
-    <div :class="`left-pravega`" @click="updateNav(0)">
+    <div :class="`left-pravega`">
       <router-link :style = "`text-decoration: none; color: inherit`" to="/">
         <img src = "/img/logo/x.png"/>
       </router-link>
@@ -248,13 +248,15 @@
 
     .burger{
       font-size: small;
-      width: 50px;
+      width: 40px;
       position: absolute;
-      height: 50px;
+      height: 40px;
       background-color: transparent;
       right: 10px;
       border-radius: 8px;
       margin-right: 5vw;
+      top: 50%;
+      transform: translateY(-50%);
     }
    .burger span {
       display: block;
@@ -316,6 +318,11 @@
     .left-pravega img{
       position: relative;
       width: 40px;
+      height: auto;
+    }
+    .left-pravega{
+      display: flex;
+      align-items: center;
     }
     #navbar{
       display: none;
