@@ -36,11 +36,12 @@ export default{
               <div class = "pravega-title grad">
                 About Pravega
               </div>
+              <br>
               <div class = "pravega-desc">
                 Pravega is the <span class = "grad">undergraduate fest</span> of IISc, featuring exemplary events in Science, Technology, and Culture. This year marks the 10th edition of Pravega, giving us all the more motivation to make this edition the most memorable Pravega ever. Pravega sees exemplary participation in its quizzes, stunning cultural competitions, and stellar concerts. 
               </div>
             </div>
-
+            
             <div class = "pravega-img">
               <img src = "/img/home/aboutpravega.png">
             </div>
@@ -59,6 +60,7 @@ export default{
               <div class = "iisc-title grad">
                 About IISc
               </div>
+              <br>
               <div class = "iisc-desc">
                 The Indian Institute of Science is India's <span class = "grad">top ranked research institution</span> and a scientific force to be reckoned with on the global stage. With a focus on interdisciplinary research in the undergraduate program, supported by preeminent faculty from each major discipline and a flourishing environment of extracurricular activities - IISc provides a suitable setting for the holistic growth of bright young bright minds.
               </div>
@@ -96,12 +98,12 @@ export default{
     .hollow-rectangle{
       position: absolute;
       z-index: 1;
-      top: 15%;
-      left: 33%;
+      top: 25%;
+      left: 22%;
       opacity: 0.5;
 
-      height: 15vw;
-      width: 10vw;
+      height: 21vw;
+      width: 26.5vw;
       border: 4px solid #f72585;
       border-image-slice: 1;
       border-image-source: linear-gradient(135deg, #f72585, #a92fde 100%);
@@ -166,7 +168,7 @@ export default{
   }
   .logo img{
     opacity: 1;
-    height: 3.75vw;
+    height: 6.75vw;
     width: auto;
     
   } 
@@ -176,6 +178,8 @@ export default{
 
     width: fit-content;
     position: relative;
+    top: 90px;
+    font-size: 25px;
     z-index: 10;
     padding-bottom: 0.75vw;
   }
@@ -200,12 +204,19 @@ export default{
   }
   .pravega{
     position: relative;
+    top: 90px;
     animation: appearPravega 0.8s ease-out;
   }
   .X{
     position: relative;
+    top: 90px;
     animation: appearX 2s ease-out;
   }
+  .location{
+    position: relative;
+    top: 90px;
+  }
+
  @keyframes appearPravega{
     0%{
       opacity: 0%;
@@ -299,7 +310,7 @@ export default{
       height: 10vw;
     }
     .logo{
-      top: 20vh;
+      top: 1vh;
     }
     .desc{
       font-size: 3vw;
@@ -342,7 +353,9 @@ export default{
     height: auto;
   }
   .pravega-title{
+    text-align: center;
     font-size: 25px;
+    margin-left: 93px;
   }
   .pravega-desc{
     font-size: 15px;
@@ -371,7 +384,9 @@ export default{
     height: auto;
   }
   .iisc-title{
+    align-items: center;
     font-size: 25px;
+    margin-left: 115px;
   }
   .iisc-desc{
     font-size: 15px;
