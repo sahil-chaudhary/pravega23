@@ -77,7 +77,7 @@ export default{
       top: 0;
       height: 100vh;
       width: 100vw;
-      background-image: url("/img/home/landing.png");
+      background-image: url("/img/home/landing.jpg");
       background-size: 130%;
       background-position: center;
       background-color: #000000;
