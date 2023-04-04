@@ -98,10 +98,13 @@ export default{
       z-index: 1;
       top: 15%;
       left: 33%;
-      
+      opacity: 0.5;
+
       height: 15vw;
       width: 10vw;
-      border: 0.5vw solid #10e685;
+      border: 4px solid #f72585;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(135deg, #f72585, #a92fde 100%);
     }
     .rectangle{
       position: absolute;
@@ -309,7 +312,7 @@ export default{
       height: 45vw;
       width: 35vw;
       top: 30%;
-      border: 0.5vw solid #10e685;
+      border: 5px solid #10e685;
     }
     .hollow-circle{
       left:80%;
