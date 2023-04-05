@@ -8,7 +8,7 @@ export default{
 	components:{Title, Soon},
 	mounted(){
         let recaptchaScript = document.createElement('script')
-      recaptchaScript.setAttribute('src', 'https://embed.typeform.com/next/embed.js')
+      recaptchaScript.setAttribute('src', '//embed.typeform.com/next/embed.js')
       document.head.appendChild(recaptchaScript)
 
     }
@@ -19,8 +19,7 @@ export default{
 <div :class = "`title-flex`">
 		<Title text = "REGISTER" color = "#f72585"/>
 		<div :class = "`content`">
-			<div data-tf-widget="rS1TgboY" data-tf-opacity="100" data-tf-iframe-props="title=Event Registration (copy)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;">
-            </div>
+			<div data-tf-widget="B2tW8dGp" data-tf-opacity="100" data-tf-iframe-props="title=Carvaan?" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:100%;"></div>
 		</div>
 	</div>
 </template>
