@@ -112,7 +112,7 @@ export default{
 					To learn in detail about all the events, click 
 					<a :style = "`color: inherit;`" 
 					class = "grad underline"
-					:href="`/pdf/CARVAAN.pdf`" >here</a>. 
+					:href="`/pdf/carvaan_web_brochure.pdf`" >here</a>. 
 					Above are the listed cities and dates for <span class = "grad">CARVAAN 2023</span>. Hope to see you all during the prelims!
 				</div>
 			
