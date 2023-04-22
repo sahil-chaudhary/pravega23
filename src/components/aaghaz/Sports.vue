@@ -14,56 +14,57 @@ export default{
 </script>
 <template>
 	<div :class = "`title-flex`">
-		<Title text = "CARVAAN" color = "#4cc9f0"/>
+		<Title text = "AAGHAZ" color = "#4cc9f0"/>
 
 		<div :class = "`content`">
 			<div :class = "`description`">
 					To learn in detail about all the events, click 
 					<a :style = "`color: inherit;`" 
 					class = "grad underline"
-					:href="`/pdf/carvaan_web_brochure.pdf`" >here</a>. 
-					Below are the listed cities and dates for <span class = "grad">CARVAAN 2023</span>. Hope to see you all during the prelims!
-			</div>
+					:href="`/pdf/Aaghaz_brochure_2.pdf`" >here</a>
+			</div> 
 
 			<div class = "links">
+				
+
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/bengaluru.jpg"
+					dataImage="/img/aaghaz/athletics.jpg"
 					size = "300px"
-					title = "BANGALORE"
-					hover = "20-21 May" />
+					title = "ATHLETICS"
+					hover = "" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/ahmedabad2.jpg"
+					dataImage="/img/aaghaz/badminton.jpg"
 					size = "300px"
-					title = "AHMEDABAD"
-					hover = "3-4 June" />
+					title = "BADMINTON"
+					hover = "" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/delhi2.jpg"
+					dataImage="/img/aaghaz/basketball.jpg"
 					size = "300px"
-					title = "DELHI"
-					hover = "10-11 June"/>
+					title = "BASKETBALL"
+					hover = ""/>
 				</router-link>
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/kolkata2.jpg"
+					dataImage="/img/aaghaz/handball.jpg"
 					size = "300px"
-					title = "KOLKATA"
+					title = "HANDBALL"
 					hover = "17-18 June" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/bhubaneswar2.jpg"
+					dataImage="/img/aaghaz/kabaddi.jpg"
 					size = "300px"
-					title = "BHUBANESHWAR"
-					hover = "24-25 June" />
+					title = "KABADDI"
+					hover = "" />
 				</router-link>
 
 
@@ -71,39 +72,33 @@ export default{
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/indore.jpg"
+					dataImage="/img/aaghaz/tt.jpg"
 					size = "300px"
-					title = "INDORE"
-					hover = "1-2 July" />
+					title = "TABLE TENNIS"
+					hover = "" />
 				</router-link>
 
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/hyderabad2.jpg"
+					dataImage="/img/aaghaz/ultimate.jpg"
 					size = "300px"
-					title = "HYDERABAD"
-					hover = "8-9 July" />
+					title = "ULTIMATE"
+					hover = "" />
 				</router-link>
 				
 				<router-link to="/carvaan/register">
 					<Card2 
-					dataImage="/img/carvaan/chennai2.jpg"
+					dataImage="/img/aaghaz/volleyball.jpg"
 					size = "300px"
-					title = "CHENNAI"
-					hover = "15-16 July" />
+					title = "VOLLEYBALL"
+					hover = "" />
 				</router-link>
 
-				<router-link to="/carvaan/register">
-					<Card2 
-					href = "https://google.com"
-					dataImage="/img/carvaan/mumbai2.jpg"
-					size = "300px"
-					title = "MUMBAI"
-					hover = "19-20 August"/>
-				</router-link>
+				
+			
 			</div>
 		</div>	
-	</div>	
+	</div>
 </template>
 
 <style scoped>

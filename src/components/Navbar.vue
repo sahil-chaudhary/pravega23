@@ -1,15 +1,18 @@
 <script>
-	export default {
+	import {useRoute} from 'vue-router';
+
+
+
+  export default {
     data(){
     	return{
-        navOpen: false
+        navOpen: false,
+        menuBlack: false
       }
     },
     methods:{
       closeDropdown(){
         this.navOpen = false;
-
-        console.log("navOpen value: " + this.navOpen)
       },
       changecolor(){
         if(window.scrollY > 0){
@@ -23,70 +26,73 @@
     },
     watch: {
       navOpen(newNavOpen){
-        console.log("works")
         if(newNavOpen){
-          console.log(true)
           this.$refs.dropdown.style.maxHeight  = "100vh"
         }
         else{
           this.$refs.dropdown.style.maxHeight = "0vh"
         }
-        
+      },
+      '$route' (newRoute){
+        if(newRoute.name === "Aaghaz"){
+          navbar.style.color = "black"
+        }else{
+          navbar.style.color = "#eeeeee"
+        }
       }
-    },
-
+    }
   }
 </script>
 
 <template>
   <nav :id="`navbar`" @load = "changecolor">
     <div :class="`left-pravega`">
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/">
       	<img src = "/img/logo/x.png" />
       </router-link>
     </div>
 
-    <div :class="`right-nav`">
+    <div :class="`right-nav`" >
 
-      <router-link :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
       <div :class="`workshop-button`">
           CARVAAN
       </div>
       </router-link>
 
-      <router-link :style = "`text-decoration: none; color: inherit; `" to="/scitech">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit; `" to="/scitech">
     	<div  :class="`scitech-button`">
       		SCITECH
     	</div>
     	</router-link>
 
 
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/cultural">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/cultural">
       <div  :class="`cult-button`">
       		CULTURALS
     	</div>
       </router-link>
 
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/workshop">
+      <router-link @click = "this.menuBlack = true;" :style = "`text-decoration: none; color: inherit`" to="/aaghaz">
     	<div :class="`workshop-button`">
-      		WORKSHOP
+      		AAGHAZ
     	</div>
       </router-link>
 
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/merch">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/merch">
     	<div :class="`merch-button`">
       		MERCHANDISE
     	</div>
       </router-link>
 
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/sponsors">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/sponsors">
     	<div  :class="`spon-button`">
       		
       		SPONSORS
     	</div>
       </router-link>
 
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/contact">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/contact">
     	<div  :class="`cont-button`">
       		CONTACT
     	</div>
@@ -97,7 +103,7 @@
 
   <nav :id="`mobile-nav`">
     <div :class="`left-pravega`">
-      <router-link :style = "`text-decoration: none; color: inherit`" to="/">
+      <router-link @click = "this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/">
         <img src = "/img/logo/x.png"/>
       </router-link>
     </div>
@@ -109,43 +115,43 @@
     </button>
 
     <div class="dropdown" ref = "dropdown">
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
+      <router-link @click = "this.navOpen = false;this.menuBlack = false;" :style = "`text-decoration: none; color: inherit;`" to="/carvaan">
         <div>
           CARVAAN
         </div>
       </router-link>
 
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/scitech">
+      <router-link @click = "this.navOpen = false;this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/scitech">
         <div>
           SCITECH
         </div>
       </router-link>
 
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/cultural">
+      <router-link @click = "this.navOpen = false;this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/cultural">
         <div>
           CULTURALS
         </div>
       </router-link>
 
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/workshop">
+      <router-link @click = "this.navOpen = false; this.menuBlack = true;" :style = "`text-decoration: none; color: inherit`" to="/aaghaz">
         <div>
-          WORKSHOP
+          AAGHAZ
         </div>
       </router-link>
 
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/merch">
+      <router-link @click = "this.navOpen = false;this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/merch">
         <div> 
           MERCHANDISE
         </div>
       </router-link>
 
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/sponsors">
+      <router-link @click = "this.navOpen = false;this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/sponsors">
         <div>
           SPONSORS
         </div>
       </router-link>
 
-      <router-link @click = "this.navOpen = false" :style = "`text-decoration: none; color: inherit`" to="/contact">
+      <router-link @click = "this.navOpen = false;this.menuBlack = false;" :style = "`text-decoration: none; color: inherit`" to="/contact">
         <div>
           CONTACT
         </div>
@@ -168,6 +174,7 @@
     display:flex;
     align-items: center;
     background-color: rgba(0,0,0,0);
+
     color: #eeeeee;
     padding-left: 5vw;
     z-index: 20;

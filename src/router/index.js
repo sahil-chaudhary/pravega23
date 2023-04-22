@@ -11,6 +11,8 @@ import Contact from "../components/Contact.vue"
 import Carvaan_registrations from "../components/carvaan/carvaan_register.vue"
 import Register from "../components/carvaan/Register.vue"
 import Cities from "../components/carvaan/Cities.vue"
+import Aaghaz from "../components/Aaghaz.vue"
+import Sports from "../components/aaghaz/Sports.vue"
 /*import Delhi from "../components/carvaan/Delhi.vue"
 
 
@@ -39,6 +41,8 @@ const routes = [
 	{path: "/sponsors", name:"Sponsors", component: Sponsors},
 	{path: "/contact", name: "Contact", component: Contact},
 	{path: "/carvaan/cities", name:"Cities",component:Cities},
+	{path: "/aaghaz", name:"Aaghaz", component: Aaghaz},
+	{path: "/aaghaz/sports", name:"Sports", component: Sports},
 	{path: "/carvaan/register", name:"Register",component:Register}
 	
 	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},
