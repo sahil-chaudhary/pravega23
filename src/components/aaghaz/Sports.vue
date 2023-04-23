@@ -27,7 +27,7 @@ export default{
 			<div class = "links">
 				
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/athletics.jpg"
 					size = "300px"
@@ -35,7 +35,7 @@ export default{
 					hover = "" />
 				</router-link>
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/badminton.jpg"
 					size = "300px"
@@ -43,7 +43,7 @@ export default{
 					hover = "" />
 				</router-link>
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/basketball.jpg"
 					size = "300px"
@@ -51,7 +51,7 @@ export default{
 					hover = ""/>
 				</router-link>
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/handball.jpg"
 					size = "300px"
@@ -59,7 +59,7 @@ export default{
 					hover = "17-18 June" />
 				</router-link>
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/kabaddi.jpg"
 					size = "300px"
@@ -70,7 +70,7 @@ export default{
 
 				
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/tt.jpg"
 					size = "300px"
@@ -78,7 +78,7 @@ export default{
 					hover = "" />
 				</router-link>
 
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/ultimate.jpg"
 					size = "300px"
@@ -86,7 +86,7 @@ export default{
 					hover = "" />
 				</router-link>
 				
-				<router-link to="/carvaan/register">
+				<router-link to="/aaghaz/aaghaaz_register">
 					<Card2 
 					dataImage="/img/aaghaz/volleyball.jpg"
 					size = "300px"

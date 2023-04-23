@@ -17,13 +17,13 @@ export default{
 	</div>
 	<div class = "landing-content">
 		<div class = "carvaan-title">
-			AAGHAZ
+			AAGHAAZ
 			<div>
 				19-21 MAY 2023
 			</div>
 		</div>
 		<div class = "desc">
-				Start your journey to greatness and ignite the fire within at "Aaghaz" the inter-college sports fest that marks the beginning of your path towards sporting excellence
+				Start your journey to greatness and ignite the fire within at "Aaghaaz" the inter-college sports fest that marks the beginning of your path towards sporting excellence
 		</div>
 
 		<div class = "learn">
@@ -92,12 +92,18 @@ export default{
   	.landing-content{
   		text-align: center;
   		top: 10vh;
-  		left: 8px;
+  		left: 17px;
 
   	}
   	.desc{
   		width: 90vw;
   	}
+
+	.learn{
+		align-items: center;
+		justify-content: center;
+		margin-left: 27%;
+	}
 
   	}
 </style>
