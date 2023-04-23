@@ -21,7 +21,7 @@ export default{
 					To learn in detail about all the events, click 
 					<a :style = "`color: inherit;`" 
 					class = "grad underline"
-					:href="`/pdf/Aaghaz_brochure_2.pdf`" >here</a>
+					:href="`/pdf/Aaghaaz_brochure_2.pdf`" >here</a>
 			</div> 
 
 			<div class = "links">
