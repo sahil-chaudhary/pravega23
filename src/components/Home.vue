@@ -22,7 +22,7 @@ export default{
               <img src = "/img/logo/x.png" class = "X"/>
               
               <div class = "location">
-               Indian Institute of Science, Bangalore &#x25cf Nov 2023
+               Indian Institute of Science, Bangalore
               </div>
           </div>
           <div class = "circle"></div>
@@ -115,7 +115,7 @@ export default{
       height: 2.5vw;
       width: 2.5vw;
       transform: translateY(calc(-1*(4vw - 100%)));
-      background-color: #dc2eaa;
+      border: 2px solid #dc2eaa;
       animation: move 2s ease-in-out infinite alternate;
 }
     
@@ -137,7 +137,7 @@ export default{
       left: 10%;
   height: 2.5vw;
   width: 2.5vw;
-  background-color: #bbd414;
+  border: 2px solid #bbd414;
   border-radius: 50%;
   transform: translateX(calc(-1*(4vw - 100%)));
   animation: move2 2s ease-in-out infinite alternate;
@@ -329,15 +329,18 @@ export default{
       left:80%;
       height: 3vw;
       width: 3vw;
+      transform: translateY(calc(1*(10vw - 100%)));
     }
     .circle{
       top: 50%;
       height: 3vw;
       width: 3vw;
+      transform: translateX(calc(1*(8vw - 100%)));
     }
     .rectangle{
       height: 3vw;
       width: 3vw;
+      transform: translateY(calc(1*(10vw - 100%)));
     }
 
   .landing{
