@@ -10,7 +10,9 @@ export default{
 		<Title text = "SCITECH" color = "#f72585"/>
 		<div :class = "`content`">
 			<div :class = "'links'">
-				<Card link = "/img/scitech/Decoherence.jpg" size = "300px"/>
+				<router-link to = "/scitech/template">
+					<Card link = "/img/scitech/Decoherence.jpg" size = "300px"/>
+			    </router-link>
 				<Card link = "/img/scitech/BioBlitz.jpg" size = "300px"/>
 				<Card link = "/img/scitech/Chemenigma.jpg" size = "300px"/>
 				<Card link = "/img/scitech/Enumeration.jpg" size = "300px"/>
