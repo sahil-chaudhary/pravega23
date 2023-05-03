@@ -1,5 +1,4 @@
 import {createRouter, createWebHistory} from 'vue-router'
-
 import Home from "../components/Home.vue"
 import Carvaan from "../components/Carvaan.vue"
 import Scitech from "../components/Scitech.vue"
@@ -15,24 +14,6 @@ import Cities from "../components/carvaan/Cities.vue"
 import Aaghaz from "../components/Aaghaz.vue"
 import Sports from "../components/aaghaz/Sports.vue"
 import scitech_template from "../components/scitech/template.vue"
-/*import Delhi from "../components/carvaan/Delhi.vue"
-
-
-import Mumbai from "../components/carvaan/Mumbai.vue"
-import Ahmedabad from "../components/carvaan/Ahmedabad.vue"
-import Kochi from "../components/carvaan/Kochi.vue"
-import Bhubaneswar from "../components/carvaan/Bhubaneswar.vue"
-import Bengaluru from "../components/carvaan/Bengaluru.vue"
-import Chennai from "../components/carvaan/Chennai.vue"
-import Hyderabad from "../components/carvaan/Hyderabad.vue"
-
-import Kolkata from "../components/carvaan/Kolkata.vue"
-
-
-
-import Kolkata from "../components/carvaan/Kolkata.vue"*/
-
-
 const routes = [
 	{path: "/", name: "Home", component: Home},
 	{path: "/carvaan", name: "Carvaan", component: Carvaan},
@@ -48,18 +29,6 @@ const routes = [
 	{path: "/carvaan/register", name:"Register",component:Register},
 	{path: "/aaghaz/aaghaaz_register", name:"Register2",component:Register2},
 	{path: "/scitech/template", name:"scitech_template",component:scitech_template},
-	
-	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},
-	{path:"/carvaan/ahmedabad",name:"Ahmedabad",component:Ahmedabad},
-	{path:"/carvaan/kochi",name:"Kochi",component:Kochi},
-	{path:"/carvaan/bhubaneswar",name:"Bhubaneswar",component:Bhubaneswar},
-	{path:"/carvaan/bengaluru",name:"Bengaluru",component:Bengaluru},
-	{path:"/carvaan/chennai",name:"Chennai",component:Chennai},
-	{path:"/carvaan/hyderabad",name:"Hyderabad",component:Hyderabad},
-	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata},
-	
-	
-	{path:"/carvaan/kolkata",name:"Kolkata",component:Kolkata}*/
 ]
 
 const router = createRouter({
