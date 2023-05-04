@@ -15,6 +15,14 @@ import Cities from "../components/carvaan/Cities.vue"
 import Aaghaz from "../components/Aaghaz.vue"
 import Sports from "../components/aaghaz/Sports.vue"
 import scitech_template from "../components/scitech/template.vue"
+import deco_register from "../components/scitech/deco_register.vue"
+import chemenigma_register from "../components/scitech/chemenigma_register.vue"
+import bioblitz_register from "../components/scitech/bioblitz_register.vue"
+import bah_register from "../components/scitech/bah_register.vue"
+import enumeration_register from "../components/scitech/enumeration_register.vue"
+import exhibitions_register from "../components/scitech/exhibitions_register.vue"
+import ideathon_register from "../components/scitech/ideathon_register.vue"
+import pis_register from "../components/scitech/pis_register.vue"
 /*import Delhi from "../components/carvaan/Delhi.vue"
 
 
@@ -48,6 +56,15 @@ const routes = [
 	{path: "/carvaan/register", name:"Register",component:Register},
 	{path: "/aaghaz/aaghaaz_register", name:"Register2",component:Register2},
 	{path: "/scitech/template", name:"scitech_template",component:scitech_template},
+	{path: "/scitech/deco_register", name:"deco_register",component:deco_register},
+	{path: "/scitech/chemenigma_register", name:"chemenigma_register",component:chemenigma_register},
+	{path: "/scitech/bioblitz_register", name:"bioblitz_register",component:bioblitz_register},
+	{path: "/scitech/bah_register", name:"bah_register",component:bah_register},
+	{path: "/scitech/enumeration_register", name:"enumeration_register",component:enumeration_register},
+	{path: "/scitech/exhibitions_register", name:"exhibitions_register",component:exhibitions_register},
+	{path: "/scitech/ideathon_register", name:"ideathon_register",component:ideathon_register},
+	{path: "/scitech/pis_register", name:"pis_register",component:pis_register},
+	
 	
 	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},
 	{path:"/carvaan/ahmedabad",name:"Ahmedabad",component:Ahmedabad},
