@@ -30,7 +30,7 @@ export default{
 					title = "Akshank"
 					hover = "7011358158 akshanktyagi@iisc.ac.in" />
 				</div>
-
+				<br/>
 				<div class = "grad">
 					Sponsorships
 				</div>
@@ -47,7 +47,7 @@ export default{
 					title = "Tejus"
 					hover = "8420942839 tejusrohatgi@iisc.ac.in" />
 					<Card2 
-					dataImage="/img/people/unknown.jpeg"
+					dataImage="/img/people/Shreshth.jpg"
 					size = "250px"
 					title = "Shresth"
 					hover = "7388058586 shreshthj@iisc.ac.in" />
@@ -57,6 +57,7 @@ export default{
 					title = "Jasnoor"
 					hover = "6280918723 jasnoorsingh@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Cultural Events
 				</div>
@@ -73,22 +74,24 @@ export default{
 					title = "Deepti"
 					hover = "6370632574 deeptisahu@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Pronites
 				</div>
 				<div class ="flex">
 					<Card2 
-					dataImage="/img/people/Naman.jpeg"
+					dataImage="/img/people/unknown.jpeg"
 					size = "250px"
 					title = "Rohan"
 					hover = "7081228530
 					 krohan@iisc.ac.in" />
 					<Card2 
-					dataImage="/img/people/unknown.jpeg"
+					dataImage="/img/people/jitu.jpg"
 					size = "250px"
 					title = "Jitendriya"
 					hover = "9148518445 jitendriyap@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Merchandise
 				</div>
@@ -110,6 +113,7 @@ export default{
 					title = "Tejas"
 					hover = "9920044090 tejasvinod@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Recreational Events
 				</div>
@@ -131,6 +135,7 @@ export default{
 					title = "Sanjith"
 					hover = "7824806236 sanjithc@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Logistics
 				</div>
@@ -157,6 +162,7 @@ export default{
 					title = "Adithya"
 					hover = "7349672927 padithya@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Publicity
 				</div>
@@ -173,12 +179,13 @@ export default{
 					title = "Ashish"
 					hover = "7754967066 ashishomar@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Scitech Events
 				</div>
 				<div class ="flex">
 					<Card2 
-					dataImage="/img/people/unknown.jpeg"
+					dataImage="/img/people/Krishna.jpg"
 					size = "250px"
 					title = "Krishna"
 					hover = "88796 29440
@@ -194,6 +201,7 @@ export default{
 					title = "Debadrito"
 					hover = "62914 68387 debadritoroy@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Workshop
 				</div>
@@ -215,6 +223,7 @@ export default{
 					title = "Shivam"
 					hover = "6202039625 shivamp@iisc.ac.in"/>
 				</div>
+				<br/>
 				<div class = "grad">
 					Website
 				</div>
@@ -231,6 +240,7 @@ export default{
 					title = "Priyanshu"
 					hover = "9310177172 priyanshug@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Design
 				</div>
@@ -247,7 +257,11 @@ export default{
 					title = "Dipayan"
 					hover = "73629 65429 dipayandatta@iisc.ac.in" />
 				</div>
-				Content
+				<br/>
+
+				<div class = "grad">
+					Content
+				</div>
 				<div class ="flex">
 					<Card2 
 					dataImage="/img/people/zenith.jpg"
@@ -261,22 +275,24 @@ export default{
 					title = "Diya"
 					hover = "8820188991 diyasarkar@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Finance
 				</div>
 				<div class ="flex">
 					<Card2 
-					dataImage="/img/people/unknown.jpeg"
+					dataImage="/img/people/pratik.jpg"
 					size = "250px"
 					title = "Pratik"
 					hover = "9774755969
 					 pratikb@iisc.ac.in" />
 					<Card2 
-					dataImage="/img/people/unknown.jpeg"
+					dataImage="/img/people/jyotirmoy.jpg"
 					size = "250px"
 					title = "Jyotirmoy"
 					hover = "7978789050 jyotirmoyb@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Decoration
 				</div>
@@ -293,6 +309,7 @@ export default{
 					title = "Sourabh"
 					hover = "9182809934 sourabhp@iisc.ac.in" />
 				</div>
+				<br/>
 				<div class = "grad">
 					Accomodation
 				</div>
@@ -362,7 +379,7 @@ export default{
 	}
 @media screen and (max-width: 1024px) {
 	.flex{
-		flex-direction: column;
+		flex-wrap: wrap;
 	}
 	.contact{
 		padding-bottom: 10vw;
