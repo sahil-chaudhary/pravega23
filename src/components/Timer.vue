@@ -83,6 +83,7 @@ export default{
   	animation: appearLighter 0.8s ease-out;
     
     background-image: -webkit-linear-gradient(45deg, #f72585, #a92fde 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
