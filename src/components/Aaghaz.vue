@@ -17,7 +17,7 @@ export default{
 	</div>
 	<div class = "landing-content">
 		<div class = "carvaan-title">
-			AAGHAZ
+			AAGHAAZ
 			<div>
 				19-21 MAY 2023
 			</div>
