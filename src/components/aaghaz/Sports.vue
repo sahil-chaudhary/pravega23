@@ -14,14 +14,14 @@ export default{
 </script>
 <template>
 	<div :class = "`title-flex`">
-		<Title text = "AAGHAZ" color = "#4cc9f0"/>
+		<Title text = "AAGHAAZ" color = "#4cc9f0"/>
 
 		<div :class = "`content`">
 			<div :class = "`description`">
 					To learn in detail about all the events, click 
 					<a :style = "`color: inherit;`" 
 					class = "grad underline"
-					:href="`/pdf/Aaghaaz_brochure_2.pdf`" >here</a>
+					:href="`/pdf/Aaghaaz_brochure_4.pdf`" >here</a>
 			</div> 
 
 			<div class = "links">

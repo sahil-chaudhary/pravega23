@@ -135,7 +135,7 @@
 
       <router-link @click = "this.navOpen = false; this.menuBlack = true;" :style = "`text-decoration: none; color: inherit`" to="/aaghaz">
         <div>
-          AAGHAZ
+          AAGHAAZ
         </div>
       </router-link>
 
