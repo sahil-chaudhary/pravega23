@@ -23,6 +23,14 @@ import enumeration_register from "../components/scitech/enumeration_register.vue
 import exhibitions_register from "../components/scitech/exhibitions_register.vue"
 import ideathon_register from "../components/scitech/ideathon_register.vue"
 import pis_register from "../components/scitech/pis_register.vue"
+import decoherence from "../components/scitech/decoherence.vue"
+import chemenigma from "../components/scitech/chemenigma.vue"
+import bioblitz from "../components/scitech/bioblitz.vue"
+import bah from "../components/scitech/BAH.vue"
+import enumeration from "../components/scitech/enumeration.vue"
+import exhibitions from "../components/scitech/exhibitions.vue"
+import ideathon from "../components/scitech/ideathon.vue"
+import pis from "../components/scitech/PIS.vue"
 /*import Delhi from "../components/carvaan/Delhi.vue"
 
 
@@ -64,6 +72,15 @@ const routes = [
 	{path: "/scitech/exhibitions_register", name:"exhibitions_register",component:exhibitions_register},
 	{path: "/scitech/ideathon_register", name:"ideathon_register",component:ideathon_register},
 	{path: "/scitech/pis_register", name:"pis_register",component:pis_register},
+	{path: "/scitech/decoherence", name:"decoherence",component:decoherence},
+	{path: "/scitech/chemenigma", name:"chemenigma",component:chemenigma},
+	{path: "/scitech/bioblitz", name:"bioblitz",component:bioblitz},
+	{path: "/scitech/bah", name:"bah",component:bah},
+	{path: "/scitech/enumeration", name:"enumeration",component:enumeration},
+	{path: "/scitech/exhibitions", name:"exhibitions",component:exhibitions},
+	{path: "/scitech/ideathon", name:"ideathon",component:ideathon},
+	{path: "/scitech/pis", name:"pis",component:pis},
+	
 	
 	
 	/*{path:"/carvaan/mumbai",name:"Mumbai",component:Mumbai},

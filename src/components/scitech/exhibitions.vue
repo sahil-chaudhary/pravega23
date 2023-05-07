@@ -18,11 +18,11 @@
 <div class ="intro">
     <div class = "intro-content">
         <br><br>
-        <h1>Some header</h1><br>
+        <h1>Exhibitions</h1><br>
         <p>Some stuff to look out for</p>
     </div>
     <div class = "intro-image">
-        <img src = "/img/scitech/sample1.png" alt = "scitech" width = "100%">
+        <img src = "/img/scitech/Exhibitions.jpg" alt = "scitech" width = "100%">
     </div>
 </div>
     

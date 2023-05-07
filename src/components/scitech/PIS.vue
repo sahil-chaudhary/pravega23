@@ -18,7 +18,7 @@
 <div class ="intro">
     <div class = "intro-content">
         <br><br>
-        <h1>Some header</h1><br>
+        <h1>Pravega Innovation Summit</h1><br>
         <p>Some stuff to look out for</p>
     </div>
     <div class = "intro-image">
