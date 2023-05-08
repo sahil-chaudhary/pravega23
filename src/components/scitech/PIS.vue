@@ -109,13 +109,58 @@
     </div>
 </div>
 
+<div class = "quote">
+    <div class = "quote-text" style="font-family: 'Times New Roman', Times, serif;">
+        <p> "I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+            Just click “Edit Text” or double click me to add your own content and make changes to the font. 
+            I’m a great place for you to tell a story and let your users know a little more about you."
+        </p>
+    </div>  
+</div>
+
 <div class ="hof" id = "hof">
     <br><br>
-    <div class = "big-text" style="width:100vw">
+    <div class = "big-text-2" style="width:100vw">
             <h1>Hall of Fame</h1>
     </div>
     <div class = "small-text" style = "width:100vw">
-            <p>Some stuff to look out for</p>
+        <table>
+  <tr>
+    <th>Position</th>
+    <th>Names of the winners</th>
+    <th>College</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>   
     </div>
 </div>
 </div>  
@@ -125,6 +170,23 @@
 </template>
 
 <style scoped>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 .scitech-navbar{
     width:70vw;
 }
@@ -207,6 +269,26 @@ li a {
     text-align: center;
 }
 
+.quote{
+    height: auto;
+    margin: auto;
+    width: 80vw;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-text{
+    position: relative;
+    height: auto;
+    width: 80vw;
+    font-size: 2rem;
+    color: coral;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
 .big-text{
     position: relative;
     height: 45vh;
@@ -216,6 +298,16 @@ li a {
     background-color: #ffffff;
     align-items: center;
     text-align: center;
+}
+.big-text-2{
+    position: relative;
+    height: 15vh;
+    width: 50vw;
+    margin-top: 0;
+    margin-right: 8vw;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center; 
 }
 .small-text{
     font-size: 1.2vw;
@@ -325,7 +417,7 @@ li a {
     .intro-content{
         width: 100vw;
     }
-    .big-text{
+    .big-text,.big-text-2{
         margin-top: 2vh;
         margin-bottom: 5vh;
         margin-left: 8vw;

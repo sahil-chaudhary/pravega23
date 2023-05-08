@@ -9,8 +9,8 @@
 
 <div class = "scitech-navbar">
   <ul>
-    <li><a href="#news">Rules</a></li>
-    <li><a href="#contact">Sample Questions</a></li>
+    <li><a href="/pdf/Chemenigma_rules.docx">Rules</a></li>
+    <li><a href="/pdf/Chemenigma'22_Prelims.pdf">Sample Questions</a></li>
     <li><a href="#hof">Hall of Fame</a></li>
   </ul>
 </div> 
@@ -19,7 +19,7 @@
     <div class = "intro-content">
         <br><br>
         <h1>Chemenigma</h1><br>
-        <p>Some stuff to look out for</p>
+        <p>Some Explosive Brain-wacking Chemistry</p>
     </div>
     <div class = "intro-image">
         <img src = "/img/scitech/sample1.png" alt = "scitech" width = "100%">
@@ -31,11 +31,9 @@
             <h1>Don't miss out on <br> IISc's Premier Chemistry Event</h1>
     </div>
     <div class = "small-text" style="background-color: #ebf234;">
-            <p>This is a unique opportunity for any chemistry enthusiast to showcase their problem-solving ability and insight in the subject. The prelims is knocking at the door and this will serve as a gateway to the main Chemenigma event!<br>
-
-<br>The Final event will truly bring out the Enigma of Chemenigma. The finalists would have to work their way through challenging problems in India's finest research labs with the exciting opportunity to present and defend their work in front of leading Chemists in the panel of judges!
-
-<br> Do you have what it takes to be in the Finals?</p>
+            <p>Chemenigma is the Chemistry quiz event of Pravega. Chemenigma is held in two stages- an online Prelims and an offline Mains at IISc. This is a team event, and groups of up to 2 people can apply together. Applicants can be high school students (Class XI, Class XII) or upto 1st-year undergraduates. 
+                Questions are meant to be thought–provoking and layered. We aspire to bring together different facets of chemistry and reward the participants who can follow essential ideas rather than rote memorization. 
+                Everyone interested in chemistry (and otherwise!) will learn something new, we promise.</p>
     </div>    
 </div>
 
@@ -46,23 +44,19 @@
     <div class = "text">
         <div class = "timeline">
             <h1>Timeline</h1><br>
-            <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
-                Just click “Edit Text” or double click me to add your own content and make changes to the font. 
-                I’m a great place for you to tell a story and let your users know a little more about you.
+            <p> The online prelims will be held in the 3rd week of July and will be a 3-3.5-hour paper followed by the Mains on the weekend of Pravega at IISc. 
+                The Top 4 teams during the prelims would be invited for mains which include both theory and lab components, thought-provoking challenges. 
+                The links for registration and the discord servers will be soon available on the website and there is no registration fees for the event.
             </p><br>
         </div>
         <div class = "eligibility">
             <h1>Eligibility</h1><br>
-            <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
-                Just click “Edit Text” or double click me to add your own content and make changes to the font. 
-                I’m a great place for you to tell a story and let your users know a little more about you.
+            <p> Please refer to the rules and regulations document for this.
             </p><br>
         </div>
         <div class = "prizes">
             <h1>Prizes</h1><br>
-            <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
-                Just click “Edit Text” or double click me to add your own content and make changes to the font. 
-                I’m a great place for you to tell a story and let your users know a little more about you.
+            <p> The event will have Prizes of up to 40k.
             </p>
         </div>
     </div>    
@@ -70,13 +64,12 @@
 <div class = "coord-intro">
     <h1>Our Coordinators</h1><br>
 
-    <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
-        Just click “Edit Text” or double click me to add your own content and make changes to the font. 
-        I’m a great place for you to tell a story and let your users know a little more about you.</p><br>
+    <p> Meet our amazing coordinators. For any query regarding the event, they are your first point of contact! 
+        Don't hesistate to mail them at any time of the day, and they will try to reply as soon as possible.</p><br>
 </div>
 
 
-<div class = "coords">
+    <div class = "coords">
    
         
     
@@ -85,8 +78,8 @@
                 <img src = "/img/scitech/camelia_photo_chemenigma.jpg" alt = "scitech" height = "120%" width="35%">
             </div>
             <div class = "coord-text">
-                <h1>Some coord</h1>
-                <p>Some stuff</p>
+                <h1>Camelia Roy</h1>
+                <p>Mail: chemenigma.pravegax@gmail.com</p>
             </div>
         </div>
         <div class = "coord">
@@ -94,10 +87,11 @@
                 <img src = "/img/scitech/priyanshu_photo_chemenigma.jpeg.jpg" alt = "scitech" height = "100%" width="45%">
             </div>
             <div class = "coord-text">
-                <h1>Some coord</h1>
-                <p>Some stuff</p>
+                <h1>Priyanshu Gupta</h1>
+                <p>Mail: priyanshug@iisc.ac.in</p>
             </div>
         </div>
+        <!--
         <div class = "coord">
             <div class = "coord-img">
                 <img src = "/img/scitech/camelia_photo_chemenigma.jpg" alt = "scitech" height = "50%" width = "35%">
@@ -105,17 +99,64 @@
             <div class = "coord-text">
                 <h1>Some coord</h1>
                 <p>Some stuff</p>
-            </div>
+            </div>-->
     </div>
+
+    
+
+
+    <div class = "quote">
+    <div class = "quote-text" style="font-family: 'Times New Roman', Times, serif;">
+        <p> "I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+            Just click “Edit Text” or double click me to add your own content and make changes to the font. 
+            I’m a great place for you to tell a story and let your users know a little more about you."
+        </p>
+    </div>  
 </div>
 
 <div class ="hof" id = "hof">
     <br><br>
-    <div class = "big-text" style="width:100vw">
+    <div class = "big-text-2" style="width:100vw">
             <h1>Hall of Fame</h1>
     </div>
     <div class = "small-text" style = "width:100vw">
-            <p>Some stuff to look out for</p>
+        <table>
+  <tr>
+    <th>Position</th>
+    <th>Names of the winners</th>
+    <th>College</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>   
     </div>
 </div>
 </div>  
@@ -125,6 +166,23 @@
 </template>
 
 <style scoped>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 .scitech-navbar{
     width:70vw;
 }
@@ -207,6 +265,26 @@ li a {
     text-align: center;
 }
 
+.quote{
+    height: auto;
+    margin: auto;
+    width: 80vw;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-text{
+    position: relative;
+    height: auto;
+    width: 80vw;
+    font-size: 2rem;
+    color: coral;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
 .big-text{
     position: relative;
     height: 45vh;
@@ -216,6 +294,16 @@ li a {
     background-color: #ffffff;
     align-items: center;
     text-align: center;
+}
+.big-text-2{
+    position: relative;
+    height: 15vh;
+    width: 50vw;
+    margin-top: 0;
+    margin-right: 8vw;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center; 
 }
 .small-text{
     font-size: 1.2vw;
@@ -325,7 +413,7 @@ li a {
     .intro-content{
         width: 100vw;
     }
-    .big-text{
+    .big-text,.big-text-2{
         margin-top: 2vh;
         margin-bottom: 5vh;
         margin-left: 8vw;
