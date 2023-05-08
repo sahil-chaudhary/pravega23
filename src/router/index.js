@@ -29,7 +29,7 @@ import bioblitz from "../components/scitech/bioblitz.vue"
 import bah from "../components/scitech/BAH.vue"
 import enumeration from "../components/scitech/enumeration.vue"
 import exhibitions from "../components/scitech/exhibitions.vue"
-import ideathon from "../components/scitech/ideathon.vue"
+import ideathon from "../components/scitech/Ideathon.vue"
 import pis from "../components/scitech/PIS.vue"
 /*import Delhi from "../components/carvaan/Delhi.vue"
 
